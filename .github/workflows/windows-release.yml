@@ -1,0 +1,82 @@
+name: Build and test Windows installer
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish this manually approved build to v2.8.0
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: windows-release-2.8.0
+  cancel-in-progress: false
+jobs:
+  windows:
+    runs-on: windows-2025
+    timeout-minutes: 45
+    env:
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
+      HOMETOWN_WARM_VOICE: '0'
+      HOMETOWN_PRECACHE: '0'
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies and verify source
+        run: |
+          npm ci --no-fund
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm test
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm audit --omit=dev --audit-level=low
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Download and verify existing voice and 65 clips
+        run: |
+          npm run setup
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Build readable source application and full installer
+        run: |
+          npm run dist:win
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Install in isolated directory
+        run: |
+          $env:HOMETOWN_DESKTOP_HIDDEN='1'
+          $env:HOMETOWN_DESKTOP_PROFILE=Join-Path $env:RUNNER_TEMP 'installer-profile'
+          $target=Join-Path $env:RUNNER_TEMP 'hometown-installed'
+          $setup=(Resolve-Path 'dist/Ban-Do-Que-Huong-Mai-Truong-Setup-2.8.0-x64.exe').Path
+          $p=Start-Process -FilePath $setup -ArgumentList @('/S',('/D='+$target)) -WindowStyle Hidden -PassThru -Wait
+          if ($p.ExitCode -ne 0) { throw "Installer failed: $($p.ExitCode)" }
+          if (-not (Test-Path (Join-Path $target 'BanDoQueHuong.exe'))) { throw 'Installed EXE missing' }
+          'QA_EXE='+(Join-Path $target 'BanDoQueHuong.exe') | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+      - name: Test installed UI, reload, demo, all clips and both voices
+        run: node test/desktop-exe-smoke.mjs
+      - name: Checksum tested installer
+        run: |
+          $file='dist/Ban-Do-Que-Huong-Mai-Truong-Setup-2.8.0-x64.exe'
+          $hash=(Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLowerInvariant()
+          $hash+'  '+[IO.Path]::GetFileName($file) | Set-Content -LiteralPath dist/SHA256SUMS.txt -Encoding ascii
+      - name: Save test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Windows-test-evidence
+          path: test-output/desktop
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Publish explicitly requested build
+        if: inputs.publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release upload v2.8.0 dist/Ban-Do-Que-Huong-Mai-Truong-Setup-2.8.0-x64.exe dist/SHA256SUMS.txt --clobber
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          gh release edit v2.8.0 --draft=false --latest
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
