@@ -1,6 +1,6 @@
 # Bản Đồ Quê Hương Việt Nam — Mai Trường LIVE
 
-Game thắp sáng quê hương cho TikTok LIVE. Bản **Windows x64 2.7.0**, có sẵn **65 clip**, ảnh giới thiệu quê, hai bộ bản đồ và giọng MC. Người xem bình luận tên tỉnh để tham gia, không bắt buộc tặng quà.
+Game thắp sáng quê hương cho TikTok LIVE. Bản **Windows x64 2.7.1**, có sẵn **65 clip**, ảnh giới thiệu quê, hai bộ bản đồ và giọng MC. Người xem bình luận tên tỉnh để tham gia, không bắt buộc tặng quà.
 
 ## Tải và chạy
 

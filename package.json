@@ -1,6 +1,6 @@
 {
   "name": "que-huong-live-runtime",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "private": true,
   "dependencies": {
     "bytenode": "2.1.0",

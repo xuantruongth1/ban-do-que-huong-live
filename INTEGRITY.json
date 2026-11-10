@@ -807,7 +807,7 @@
     },
     {
       "path": "licenses/FFmpeg-BUILD.txt",
-      "sha256": "6189f7247f7303488b40a3d703f933f73bf356e7555451e16d816eb2ca913b94"
+      "sha256": "1e1f7c4e4c09730c140e30c78903b11c8ca4aa1ddd706e212b7b86cb4ec7764d"
     },
     {
       "path": "licenses/FFmpeg-COPYING.GPLv3.txt",
@@ -827,11 +827,11 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "9661338b56f2e13fb63de2b33bbc1fec9195e8c5a3481b25ce983e0ba428b055"
+      "sha256": "5e239599868f631da7d599913ad0fcfb5d83e5f5aebb227a1dedbf260c4b8470"
     },
     {
       "path": "package.json",
-      "sha256": "e596e7acf7f19102a31e09163138e5a8911efba00d33b7e745fdc693e08f6850"
+      "sha256": "eed644aea3296dc3d7cdcaca63a0caa87d42fc628f900322acbd5ac8fbc29719"
     },
     {
       "path": "public/ambient-effects.mjs",
@@ -1711,11 +1711,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "0dc29f40e70094e355cbe44e22ac654b2ade6d68bfb510147b3b3f6e4daed41a"
+      "sha256": "941c9c024c10bf158dddb389d0c977dfd5a693af7488b13b388360232080ccfe"
     },
     {
       "path": "release-manifest.json",
-      "sha256": "6aff50dbc8d56f9f5a9f0a1fb1912dcf0117cd81b3480176ba820ef4e8b6fd8b"
+      "sha256": "882d79b8288ca1a90e27bbc255cc95180894b7eda841c3ebc2e7d2ef2ad4cea8"
     },
     {
       "path": "run.cjs",
@@ -1727,7 +1727,7 @@
     },
     {
       "path": "Setup.ps1",
-      "sha256": "017ae087b3bf210437b521ec59a65524eeeffff9e1a5e75b69355261e1a5afa6"
+      "sha256": "3f651953f02e15899635a7e3cdbcc6ef6529bdf51a2d921d506ea7e19f1c3114"
     },
     {
       "path": "SHA256SUMS.txt",
