@@ -1,0 +1,16 @@
+Copyright (c) 2026 Mai Truong.
+
+Permission is granted to download, clone, fork on GitHub, and run this published
+runtime package for personal use and TikTok LIVE operation without a usage fee.
+Donations are voluntary. This permission does not grant ownership of the brand,
+voice reference, or private source code, and does not authorize resale or
+rebranding as another author's product without permission.
+
+This is a protected runtime distribution, not an open-source source-code grant.
+Protection is not an absolute guarantee against reverse engineering.
+The software is provided as-is without warranty of TikTok service availability.
+
+Third-party code, models, media, fonts and data retain their respective licenses.
+Those licenses take precedence for their respective components, including any
+rights to use, modify and redistribute those components. See THIRD-PARTY.txt,
+licenses/, public/credits.html and package metadata in the runtime.

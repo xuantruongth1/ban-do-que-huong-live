@@ -1,0 +1,1790 @@
+{
+  "speechFallback": false,
+  "voiceProvider": "phat",
+  "voice": "male",
+  "rate": 1.15,
+  "volume": 0.85,
+  "speech": true,
+  "videoVolume": 0.5,
+  "rules": [
+    {
+      "action": "roses",
+      "giftId": "5655",
+      "threshold": 1,
+      "duration": 7,
+      "enabled": true
+    },
+    {
+      "action": "hearts",
+      "giftId": "5487",
+      "threshold": 1,
+      "duration": 8,
+      "enabled": true
+    },
+    {
+      "action": "orbit",
+      "giftId": "5269",
+      "threshold": 1,
+      "duration": 8,
+      "enabled": true
+    },
+    {
+      "action": "fireworks",
+      "giftId": "5879",
+      "threshold": 1,
+      "duration": 10,
+      "enabled": true
+    },
+    {
+      "action": "battle",
+      "giftId": "5658",
+      "threshold": 1,
+      "duration": 20,
+      "enabled": true
+    },
+    {
+      "action": "dragon",
+      "giftId": "5660",
+      "threshold": 1,
+      "duration": 14,
+      "enabled": true
+    }
+  ],
+  "raceConfig": {
+    "mapMode": "63",
+    "autoLightEnabled": true,
+    "autoLightGap": 30,
+    "giftTierEffects": true,
+    "giftSparkEnabled": true,
+    "showCrowns": true,
+    "showScorePopups": true,
+    "commentZoomEnabled": true,
+    "commentZoomDuration": 3,
+    "colorCount": 6,
+    "multiColor": true,
+    "palette": [
+      "#00e676",
+      "#ffd000",
+      "#ff6b00",
+      "#009cff",
+      "#ed28ce",
+      "#8155ff",
+      "#00e0cf",
+      "#ff304f",
+      "#b2ef00",
+      "#ff70b5",
+      "#00c4ff",
+      "#ec9c00"
+    ],
+    "litColor": "#ffd000",
+    "unlitColor": "#153a4e",
+    "mapBackground": "#041b32",
+    "colorCycleSeconds": 0,
+    "glowStrength": 1.4,
+    "sfxEnabled": true,
+    "sfxVolume": 0.2,
+    "giftToastEnabled": true,
+    "fireworksThreshold": 0,
+    "backgroundPreset": "ocean",
+    "backgroundOpacity": 1,
+    "backgroundBlur": 0,
+    "liveSafeBottom": 380,
+    "mcLibraryVersion": 4,
+    "mcAuto": true,
+    "mcFastGift": true,
+    "mcContinuous": true,
+    "mcPrecache": true,
+    "mcWelcome": true,
+    "mcSocial": true,
+    "mcAutoGap": 22,
+    "mcChaseMax": 100,
+    "duration": 300,
+    "countdown": 5,
+    "autoNext": true,
+    "rest": 8,
+    "winnerDuration": 24,
+    "winnerIntroDuration": 12,
+    "commentPoints": 1,
+    "commentCooldown": 0,
+    "battleDuration": 20,
+    "battleBonus": 0,
+    "allMapThreshold": 1500,
+    "tiers": [
+      {
+        "min": 1,
+        "max": 4,
+        "points": 3
+      },
+      {
+        "min": 5,
+        "max": 29,
+        "points": 30
+      },
+      {
+        "min": 30,
+        "max": 99,
+        "points": 100
+      },
+      {
+        "min": 100,
+        "max": 499,
+        "points": 500
+      },
+      {
+        "min": 500,
+        "max": 1499,
+        "points": 1500
+      },
+      {
+        "min": 1500,
+        "max": null,
+        "points": 3000
+      }
+    ],
+    "effectIntensity": 1,
+    "cameraZoom": 1,
+    "labelScale": 1,
+    "showLabels": true,
+    "mcGap": 3,
+    "mcCommentGap": 10,
+    "mcIdleGap": 25,
+    "mcQueueLimit": 16,
+    "templates": {
+      "manual": [
+        "{text}"
+      ],
+      "waiting": [
+        "Đồng hương khắp mọi miền ơi! Bình luận tên tỉnh để chọn quê, cuộc đua sắp bắt đầu rồi!",
+        "Đã nhận lời chọn quê {province} của {name}. Khi vòng mở, bạn bình luận tiếp để quê mình được cộng điểm nhé.",
+        "Chào {name}, đồng hương {province}! Mình đang chờ vòng mới, bạn ở lại cùng hội quê mình nhé.",
+        "Cảm ơn {name} đã điểm danh {province}. Vòng chưa mở nên mình giữ lựa chọn quê, chưa cộng điểm lúc này nhé."
+      ],
+      "countdown": [
+        "Cả nhà sẵn sàng nhé! Cuộc đua quê hương bắt đầu sau {seconds} giây."
+      ],
+      "start": [
+        "Cuộc đua số {round} chính thức bắt đầu! Chúng ta có {minutes} phút. Bình luận tên tỉnh để thắp sáng quê mình nào!",
+        "Cổng quê hương đã mở! {minutes} phút để cùng nhau đưa quê mình lên ngôi. Đồng hương ơi, điểm danh thôi!"
+      ],
+      "firstLight": [
+        "Sáng rồi, {province} lên đèn rồi cả nhà! Cảm ơn {name} mở màn cho quê mình. Đồng hương {province} đang xem, bình luận tên tỉnh để vào cùng bạn nhé.",
+        "Đón được {name} ở {province} rồi nhé! Ánh đèn đầu tiên đã có, bây gi�� mình cùng chờ hội đồng hương về đông hơn. Ai cùng quê, để lại tên tỉnh nào.",
+        "{province} có đèn rồi! Người mở đầu là {name}, cảm ơn bạn nhé. Một bình luận mà đưa cả quê mình lên bản đồ, vui thế này thì đồng hương vào tiếp sức thôi.",
+        "Chào {name}, chào đồng hương {province}! Quê mình vừa có ánh đèn đầu tiên trong vòng này. Ai còn đang xem, bình luận tên tỉnh để góp thêm một điểm nhé."
+      ],
+      "comment": [
+        "{province} lên {score} điểm rồi nhé. Cảm ơn {name} vừa góp thêm {points} điểm, đồng hương mình vẫn đang giữ nhịp rất đều!",
+        "Có thêm {name} tiếp sức cho {province}! Tổng hiện tại là {score} điểm. Quê mình còn ai đang xem, vào cùng hội nào.",
+        "Thêm {points} điểm từ bình luận của {name}, {province} đang có {score} điểm rồi. Cứ từng người góp một chút, thứ hạng có thể đổi lúc nào đấy!"
+      ],
+      "milestone": [
+        "{lit} tỉnh đã sáng! Ai chưa tham gia, bình luận tên tỉnh để thắp sáng quê mình nhé.",
+        "Cả nhà đã thắp sáng {lit} trên {total} tỉnh! Mình cùng mở tiếp những ánh đèn còn lại nào."
+      ],
+      "leader": [
+        "Đổi ngôi rồi cả nhà! {province} vừa lên đầu với {score} điểm. Chúc mừng đồng hương, nhưng mình còn phải giữ nhịp nhé, các quê phía sau vẫn đang đuổi rất sát.",
+        "{province} đang dẫn đầu, {score} điểm rồi nhé! Quê nào muốn đuổi kịp, đồng hương cùng bình luận tên tỉnh để tiếp sức. Mình chờ xem ngôi đầu này giữ được bao lâu nào."
+      ],
+      "tieLead": [
+        "{provinces} đang đồng điểm dẫn đầu! Cuộc đua quê hương đang rất sít sao, thêm một lời điểm danh cũng có thể tạo khác biệt!"
+      ],
+      "gift": [
+        "Cảm ơn {name} gửi {gift}, số lượng {quantity}! {province} được cộng {points} điểm, lên {score} điểm rồi!",
+        "{province} vừa nhận thêm {points} điểm! Cảm ơn món quà {gift} của {name}, đồng hương mình cùng cổ vũ nhé.",
+        "{name} tiếp sức cho {province} bằng {gift}! Thêm {points} điểm, tổng hiện tại {score} điểm."
+      ],
+      "roses": [
+        "Mưa hoa hồng từ {name} đang gửi về {province}! Cả nhà cùng đón một cơn mưa yêu thương nhé!"
+      ],
+      "hearts": [
+        "{name} gửi những trái tim bay khắp bản đồ! Tình cảm này dành cho {province} và tất cả đồng hương trong phòng!"
+      ],
+      "orbit": [
+        "Mời cả nhà cùng camera ghé quanh {province}! Cảm ơn {name} đã mở chuyến bay ngắm quê hương."
+      ],
+      "fireworks": [
+        "Pháo hoa đang bừng lên trên cả bản đồ! Cảm ơn {name}, cùng chúc quê hương một mùa sum vầy!"
+      ],
+      "dragon": [
+        "Rồng vàng đến rồi! Cảm ơn {name}. Cả bản đồ cùng sáng, mời cả nhà theo chuyến bay dọc đất nước nhé!",
+        "Cảm ơn {name} mở màn rồng vàng! Cả bản đồ bừng sáng, mình cùng ngắm trọn dải đất chữ S nào."
+      ],
+      "allMap": [
+        "Cả bản đồ đã bừng sáng nhờ món quà của {name}! Tất cả {total} tỉnh cùng chung một ánh đèn quê hương!"
+      ],
+      "missingHome": [
+        "Cảm ơn {name} tặng quà! Bạn bình luận tên tỉnh để chọn quê trước, quà sau sẽ được cộng đúng cho quê mình nhé!"
+      ],
+      "battleStart": [
+        "Đại chiến bắt đầu! {left} gặp {right}, thời gian {seconds} giây! Điểm kiếm thêm trong đại chiến sẽ quyết định, đồng hương hai bên vào tiếp sức nào!"
+      ],
+      "battleWait": [
+        "Cảm ơn {name} mở đại chiến! Cần ít nhất hai quê có điểm để giao đấu, cả nhà bình luận tên tỉnh vào cuộc nhé!"
+      ],
+      "battleEnd": [
+        "Đại chiến khép lại! {provinces} chiến thắng với {score} điểm tăng thêm. Chúc mừng đồng hương!"
+      ],
+      "battleTie": [
+        "Hai quê {provinces} hòa nhau trong đại chiến! Một màn tiếp sức rất đẹp, cuộc đua chính vẫn tiếp tục!"
+      ],
+      "half": [
+        "Nửa chặng đường đã qua! {province} đang có {score} điểm. Các quê còn lại vẫn kịp tạo bất ngờ!"
+      ],
+      "lastMinute": [
+        "Còn một phút! {province} đang dẫn {score} điểm. Đồng hương các quê, bình luận tên tỉnh tiếp sức nào!",
+        "Một phút cuối rồi! Ngôi đầu đang là {province}, {score} điểm. Liệu có cú bứt phá nào nữa không?"
+      ],
+      "last30": [
+        "Còn ba mươi giây! Ai đang xem, bình luận tên tỉnh tiếp sức cho quê mình nhé.",
+        "Ba mươi giây cuối, thứ hạng vẫn còn có thể đổi! Đồng hương mình cố lên nào."
+      ],
+      "last10": [
+        "Mười giây cuối rồi! Đồng hương bình luận tên tỉnh, cùng tiếp sức đến hết vòng nhé."
+      ],
+      "final": [
+        "{seconds}!"
+      ],
+      "paused": [
+        "Cuộc đua tạm dừng, điểm và thời gian được giữ nguyên. Cả nhà chờ hiệu lệnh tiếp theo nhé!"
+      ],
+      "resumed": [
+        "Cuộc đua tiếp tục! Đồng hương giữ lửa cho quê mình nào!"
+      ],
+      "idle": [
+        "Phòng mình đang chờ thêm đồng hương đây. Bạn quê ở tỉnh nào, bình luận tên tỉnh để thắp sáng nhé. Không cần quà, cứ tham gia cùng cả nhà cho vui!",
+        "Ai còn đang xem mà chưa tham gia, thử bình luận tên tỉnh của bạn nhé. Thấy quê mình có đèn rồi thì gọi thêm đồng hương vào cùng, mỗi bình luận hợp lệ đều góp một điểm.",
+        "Mình đang tìm những ánh đèn mới trên bản đồ. Bạn có muốn quê mình xuất hiện không? Bình luận tên tỉnh nhé, rồi cùng kể một chút về nơi bạn sinh ra nào."
+      ],
+      "intro": [
+        "{intro} Đồng hương {province} cùng tiếp sức cho quê mình nhé!"
+      ],
+      "winner": [
+        "Hết giờ! Chúc mừng {province} chiến thắng với {score} điểm! Cả phòng cùng theo chân đồng hương trở về quê hương nào!",
+        "Vòng đua khép lại, {province} dẫn đầu với {score} điểm! Cảm ơn tất cả các quê đã cùng tham gia, mời cả phòng về thăm quê thắng nhé.",
+        "Xin chúc mừng đồng hương {province}, {score} điểm! Mình cùng dành ít phút ngắm quê nhà và gửi lời chúc tới nhau nào.",
+        "{province} là quê thắng vòng này với {score} điểm. Dù quê nào về trước, cả nhà vẫn cùng chung một niềm vui sum họp!"
+      ],
+      "coWinners": [
+        "Hết giờ! {provinces} đồng hạng nhất với {score} điểm! Chúng ta sẽ lần lượt ghé thăm từng quê chiến thắng."
+      ],
+      "noWinner": [
+        "Cuộc đua đã khép lại nhưng chưa có quê nào nhận điểm. Vòng sau, bình luận tên tỉnh để thắp sáng quê mình nhé!"
+      ],
+      "winnerVisit": [
+        "Chúc mừng đồng hương {province}! Trước khi xem clip, mình cùng ghé quê chiến thắng một chút nhé. {intro} Mời cả nhà cùng theo dõi, và cảm ơn những người vừa tiếp sức cho quê mình.",
+        "Vòng này mình có hẹn về {province} rồi cả nhà! {intro} Đồng hương quê mình cùng đón mọi người nhé, chuyến về thăm quê bắt đầu ngay sau đây."
+      ],
+      "noClip": [
+        "{province} đã thắng cuộc! Chủ LIVE sẽ thêm clip quê sau; lúc này cả nhà cùng ngắm quê mình trên bản đồ và gửi lời chúc mừng nhé!"
+      ],
+      "next": [
+        "Mình chuẩn bị vòng mới nhé cả nhà. Đèn và điểm được đặt lại, ai cũng có cơ hội mở màn cho quê mình. Cứ bình luận tên tỉnh khi đếm ngược kết thúc nhé!"
+      ],
+      "unknown": [
+        "Bạn nhập đầy đủ tên một tỉnh hoặc thành phố để chọn quê nhé! Có thể gõ không dấu."
+      ],
+      "giftQuick": [
+        "Nhận được quà rồi, {name} ơi! Cảm ơn bạn đã tiếp sức cho {province}.",
+        "Cảm ơn {name} nhé! Món quà vừa cộng thêm {points} điểm cho {province}, đồng hương mình cùng cổ vũ nào.",
+        "{province} nhận thêm {points} điểm rồi! Cảm ơn {name} đã gửi quà về quê mình nhé.",
+        "Quà của {name} đã tới {province}! Thêm {points} điểm cho quê nhà, cảm ơn tình cảm của bạn nhé."
+      ],
+      "autoLight": [
+        "Đèn tự động vừa thắp sáng {province}. Đồng hương bình luận tên tỉnh để tham gia và góp điểm cho quê mình nhé!"
+      ],
+      "hometownVisit": [
+        "Cảm ơn bông hồng của {name} nhé! Nhờ bạn mà cả phòng có dịp ghé thăm {province}. {intro} Đồng hương quê mình còn biết chỗ nào hay, kể thêm cho cả nhà nghe nhé.",
+        "Mình nhận được hoa hồng của {name} rồi! Bây giờ mời cả nhà cùng về {province}. {intro} Ai đã từng đến đây, chia sẻ một kỷ niệm cùng đồng hương nhé.",
+        "Một bông hồng gửi về {province}, cảm ơn {name}! Mình cùng ngắm quê bạn một chút nhé. {intro} Có đồng hương nào đang ở quê không, chào cả phòng một tiếng nào."
+      ],
+      "roomWelcome": [
+        "Chào cả nhà vừa ghé vào! Bạn quê ở đâu, để lại tên tỉnh dưới bình luận nhé. Chỉ một bình luận thôi là quê mình có đèn trên bản đồ, không cần tặng quà đâu.",
+        "Có ai đang xem mà quê mình còn chưa sáng không? Bình luận tên tỉnh nhé, mình cùng mở đèn cho quê bạn. Biết đâu trong phòng đang có người cùng quê chờ bạn lên tiếng đấy.",
+        "Hôm nay cả nhà mình đang ở quê hay đi làm xa? Trước tiên cứ bình luận tên tỉnh để thắp sáng quê mình đã nhé. Rồi kể một món quê mà lâu lắm bạn chưa được ăn xem nào.",
+        "Mời những bạn mới vào cùng chơi nhé. Bình luận tên tỉnh, có dấu hay không dấu đều được. Khi quê mình sáng lên, ai cùng quê nhớ chào nhau một tiếng, gặp được đồng hương là vui rồi.",
+        "Bạn nhìn thấy quê mình trên bản đồ chưa? Để lại tên tỉnh dưới bình luận nhé. Hôm nay mình cùng tìm đồng hương, nghe chuyện quê và xem quê nào về đích trước.",
+        "Chào bạn đang nghe ở đầu bên kia nhé! Bạn đang ở miền nào, bình luận tên tỉnh để cả phòng biết với nào. Quê mình chưa có đèn thì bạn mở màn luôn nhé.",
+        "Ai vừa vào chưa biết chơi thì rất đơn giản thôi: bình luận tên tỉnh để thắp sáng, mỗi bình luận hợp lệ góp một điểm. Mời bạn chọn quê cùng cả nhà nhé!",
+        "Có đồng hương nào lâu rồi chưa về nhà không? Hôm nay mình hẹn nhau trên bản đồ trước nhé. Bạn bình luận tên tỉnh, để xem hội quê mình có những ai nào."
+      ],
+      "progress": [
+        "Mình điểm lại một chút nhé: {lit} trên {total} tỉnh đã sáng, có {people} người góp mặt trong vòng này. Bạn vừa vào thì bình luận tên tỉnh để tham gia, mình vẫn đang chờ thêm đồng hương ở những quê còn tối.",
+        "Bản đồ đã có {lit} tỉnh sáng rồi cả nhà, còn {dark} tỉnh chưa mở đèn. Ai muốn làm người đầu tiên cho quê mình, bình luận tên tỉnh nhé. Không cần quà, một bình luận là tham gia được ngay.",
+        "Đến lúc này có {people} người cùng thắp sáng {lit} tỉnh. Cảm ơn cả nhà đã mang quê mình tới đây. Bạn nhìn xem đã thấy đồng hương chưa, nếu thấy rồi thì chào nhau một câu nhé."
+      ],
+      "chase": [
+        "Cả nhà nhìn cuộc đua này nhé, {province} chỉ cần thêm {needed} điểm là vượt mức hiện tại của {target}. Đồng hương hai quê đang xem, bình luận tên tỉnh để tiếp sức nào. Chưa hết giờ thì chưa biết ai thắng đâu!",
+        "{province} đang bám ngay sau {target}, thêm {needed} điểm nữa là đổi chỗ rồi. Mỗi bình luận hợp lệ góp một điểm, quê mình có kịp bứt lên không? Mình cùng chờ nhé!",
+        "Cơ hội đang ở ngay trước mắt {province}: cần {needed} điểm nữa để vượt {target}. Ai cùng quê mà vẫn đang xem, vào tiếp sức một bình luận nhé. Cuộc đua còn nhiều bất ngờ lắm."
+      ],
+      "unlitInvite": [
+        "{province} chưa sáng trong vòng này. Có đồng hương nào đang xem không? Bình luận tên tỉnh để mở ánh đèn đầu tiên nhé!",
+        "Đang tìm một người mở đèn cho {province}! Chỉ cần bình luận đúng tên tỉnh là quê mình sáng lên.",
+        "{province} vẫn còn tối. Ai muốn đưa quê mình vào cuộc đua, bình luận tên tỉnh ngay nhé!",
+        "Đồng hương {province} ơi, đến lượt quê mình rồi! Một bình luận để cả phòng cùng thấy tỉnh sáng lên.",
+        "Có bạn nào quê {province} không? Bình luận tên tỉnh nhé, mình đang chờ ánh đèn từ quê bạn.",
+        "Bản đồ còn chỗ chờ {province}. Đồng hương bình luận tên tỉnh để thắp sáng quê mình nào!"
+      ],
+      "homeJoin": [
+        "Chào {name}! Đồng hương {province} có thêm bạn rồi. Cùng góp điểm cho quê mình nhé.",
+        "{province} đón thêm {name}! Ai cùng quê đang xem, bình luận tên tỉnh vào hội nào.",
+        "Cảm ơn {name} tham gia cùng {province}. Cả hội mình cùng tiếp sức nhé!"
+      ],
+      "switchedHome": [
+        "{name} vừa chọn về {province}. Mình ghi nhận quê bạn chủ động chọn từ bình luận này nhé.",
+        "Đã nhận lựa chọn mới của {name}: {province}! Điểm vừa góp sẽ về đúng quê đang chọn.",
+        "Mời {name} về cùng đồng hương {province}. Những điểm cũ vẫn được giữ ở quê đã nhận trước đó nhé."
+      ],
+      "comeback": [
+        "{province} lại có lời điểm danh sau một lúc chờ rồi! Cảm ơn {name} đã quay lại giữ đèn quê mình.",
+        "Quê {province} vừa được tiếp thêm một nhịp từ {name}. Người xa quê gặp lại nhau, câu chào nào cũng quý.",
+        "{name} trở lại cùng {province}! Mình cùng nối tiếp câu chuyện quê hương nhé."
+      ],
+      "soloHome": [
+        "Mới có {province} sáng đèn! Các quê khác đâu rồi, bình luận tên tỉnh để vào cuộc nhé.",
+        "{province} đã mở màn! Ai muốn quê mình cùng sáng, bình luận tên tỉnh ngay nhé.",
+        "{province} đang chờ đối thủ đây! Đồng hương các tỉnh khác, mình cùng tham gia cho vui nào."
+      ],
+      "allLit": [
+        "Tất cả {total} tỉnh đều đã có ánh đèn! Cảm ơn cả nhà đã cùng làm nên một bản đồ đầy tình quê.",
+        "Không còn quê nào tối nữa rồi! {total} tỉnh cùng sáng, mỗi đồng hương đều góp một phần vào khoảnh khắc này.",
+        "Bản đồ đã sáng đủ {total} tỉnh. Mình cùng giữ ánh đèn và gửi một lời chúc bình an về khắp mọi miền nhé.",
+        "Cả đất nước đã bừng sáng trong vòng này! Dù bạn chọn quê nào, chúng ta vẫn đang cùng chung một cuộc hội ngộ."
+      ],
+      "hometownFeeling": [
+        "Cả nhà thử nhớ xem, mỗi lần về quê thì món đầu tiên bạn muốn ăn là gì? Có khi là bát canh mẹ nấu, có khi chỉ là quán ăn đầu ngõ mà ở thành phố tìm mãi chẳng thấy đúng vị. Bạn kể tên món ấy dưới bình luận nhé, để xem có ai nhận ra quê của bạn không. Còn muốn thắp sáng trên bản đồ thì bình luận riêng tên tỉnh nhé.",
+        "Ai đang đi làm xa, lần gần nhất bạn về nhà là khi nào? Có người mới về tuần trước, cũng có người vẫn đang chờ sắp xếp được một chuyến. Chưa về được thì hôm nay mình gặp đồng hương ở đây trước nhé. Bình luận tên tỉnh để thắp sáng quê mình, rồi kể xem điều gì làm bạn nhớ nhà nhất vào những ngày đi xa.",
+        "Nếu được dẫn cả phòng về quê một ngày, bạn sẽ đưa mọi người đi đâu trước? Một bãi biển, một phiên chợ, hay con đường tới trường ngày bé? Những nơi quen với mình có khi lại rất thú vị với người chưa từng đến. Bạn giới thiệu một chỗ dưới bình luận nhé, biết đâu lại có đồng hương nhận ra và kể tiếp cùng bạn.",
+        "Có ai xa quê rồi mới thấy quý giọng nói quê mình không? Đang ở một nơi đông người, bất chợt nghe một câu nói quen là muốn quay lại hỏi ngay: bạn cũng cùng quê à? Hôm nay trong phòng này biết đâu cũng có một cuộc gặp như thế. Cả nhà bình luận tên tỉnh để tìm nhau nhé, gặp đồng hương thì nhớ chào nhau một tiếng.",
+        "Bạn có nhớ buổi sáng ở quê mình thường bắt đầu bằng tiếng gì không? Tiếng chợ, tiếng gọi nhau đầu ngõ, hay tiếng xe đi qua con đường quen? Mỗi nơi một khác, nhưng nghe đúng âm thanh ấy là nhận ra nhà mình ngay. Ai đang ở quê kể cho những người đi xa nghe một chút nhé, để cả phòng cùng hình dung quê bạn.",
+        "Cả nhà có ai còn giữ một nhóm bạn từ hồi đi học không? Mỗi người đi một nơi, lâu lâu hẹn được một bữa ở quê là chuyện cũ lại kể mãi không hết. Nếu hôm nay thấy tên tỉnh mình sáng trên bản đồ, thử chào đồng hương xem nhé. Biết đâu lại gặp người từng học gần trường mình, từng đi chung một con đường mỗi sáng.",
+        "Nhìn một tỉnh trên bản đồ thì chỉ thấy tên và đường ranh, nhưng với người cùng quê đó còn là nhà, là người thân, là bao nhiêu chuyện để nhớ. Bởi thế mình mới rủ cả nhà thắp sáng quê hương cùng nhau. Bạn vừa vào phòng thì bình luận tên tỉnh nhé, rồi kể một điều bình dị mà bạn thích nhất ở nơi mình lớn lên.",
+        "Quê mình không nhất thiết phải có một địa điểm thật nổi tiếng mới đáng giới thiệu đâu cả nhà. Một bến nước, một con ngõ, một quán nhỏ quen thuộc cũng có thể là nơi mình muốn dẫn bạn bè về nhất. Bạn muốn giới thiệu điều gì về quê mình? Kể ở bình luận nhé, còn tên tỉnh thì gửi riêng để hệ thống nhận và thắp đèn cho đúng."
+      ],
+      "rankingUpdate": [
+        "{province} hiện có {score} điểm. Đồng hương đang xem, bình luận tên tỉnh để tiếp sức nhé!",
+        "Cập nhật {province}: {score} điểm! Quê mình còn ai chưa tham gia, vào cùng hội đồng hương nào.",
+        "{province} đang ở mốc {score} điểm. Cứ thêm từng bình luận, thứ hạng vẫn có thể thay đổi."
+      ],
+      "underdog": [
+        "{province} vẫn còn cơ hội! Đồng hương đang xem, bình luận tên tỉnh để quê mình tiến thêm nhé.",
+        "Mốc hiện tại của {province} là {score} điểm. Mình cùng góp thêm từng bình luận, chưa hết giờ là vẫn còn cơ hội.",
+        "Đừng để quê mình đứng yên nhé! Đồng hương {province} vào cùng tiếp sức nào."
+      ],
+      "homeCrowd": [
+        "{province} đã có {count} đồng hương góp mặt trong vòng này. Cả nhà cùng gửi một câu chào tới quê mình nhé!",
+        "Hội đồng hương {province} đang có {count} người. Biết đâu bạn vừa tìm được một người cùng xóm trong phòng này!",
+        "{count} người đang chung một lời gọi {province}. Cảm ơn quê mình đã cùng hội tụ!",
+        "Xin chào {count} đồng hương {province}! Chúc cả hội có một cuộc đua vui và một buổi gặp gỡ ấm áp."
+      ],
+      "roomBusy": [
+        "Nhiều quê đang cùng điểm danh quá! Mình vẫn ghi nhận điểm, lời chào sẽ lần lượt gửi tới cả nhà nhé.",
+        "Bản đồ đang rộn ràng bình luận thắp sáng quê. Cảm ơn đồng hương đã cùng giữ không khí vui vẻ cho cả phòng!",
+        "Nhìn các tỉnh lần lượt sáng lên thấy ấm lòng thật! Cảm ơn mỗi người đã góp một lời cho quê nhà."
+      ],
+      "viewerWelcome": [
+        "Chào {name} vừa vào phòng! Bình luận tên tỉnh để thắp sáng quê hương nhé.",
+        "{name} quê ở đâu? Bình luận tên tỉnh, mình cùng tìm đồng hương nào.",
+        "Chào {name}! Thử xem quê mình đã sáng chưa, bình luận tên tỉnh để góp điểm nhé."
+      ],
+      "followThanks": [
+        "Cảm ơn {name} đã theo dõi! Mời bạn bình luận tên tỉnh để cùng thắp sáng quê hương.",
+        "Cảm ơn lượt theo dõi của {name}! Ở lại cổ vũ đồng hương cùng cả phòng nhé."
+      ],
+      "shareThanks": [
+        "Cảm ơn {name} đã chia sẻ LIVE! Biết đâu nhờ bạn, mình lại gặp thêm một người đồng hương.",
+        "{name} vừa gửi cuộc hội ngộ này tới bạn bè, cảm ơn bạn đã nối thêm một nhịp cầu về quê!",
+        "Cảm ơn {name} đã chia sẻ. Mời những đồng hương mới ghé cùng bình luận tên quê nhé."
+      ],
+      "likeThanks": [
+        "Cảm ơn những trái tim của {name}! Tình cảm này mình cùng gửi về quê hương nhé.",
+        "{name} đang gửi tim cho phòng, cảm ơn bạn! Mời bạn gọi thêm tên quê để cùng thắp đèn nhé.",
+        "Nhận được tim từ {name} rồi! Cảm ơn bạn đã giữ không khí ấm áp cho cả nhà."
+      ],
+      "giftKindness": [
+        "Quà là lời cổ vũ tự nguyện. Chỉ bình luận tên tỉnh thôi, bạn cũng đã góp vui và có thể thắp đèn khi đang đua rồi nhé.",
+        "Bạn không cần tặng quà mới được xuất hiện. Mỗi bình luận thắp sáng quê đúng tên đều được chào đón ở đây.",
+        "Cảm ơn cả người tặng quà lẫn người góp bình luận. Mỗi cách tiếp sức đều có ý nghĩa với cuộc hội ngộ này."
+      ],
+      "lateJoin": [
+        "{name} vừa về cùng {province} trong đoạn cuối! Vẫn kịp góp một lời điểm danh cho quê mình nhé.",
+        "Chào {name}, cuộc đua còn {seconds} giây. Ánh đèn {province} đang đón bạn rồi!",
+        "Dù chỉ còn ít thời gian, lời gọi {province} của {name} vẫn được ghi nhận. Quê mình cùng vui đến cuối vòng nhé."
+      ]
+    },
+    "regionSettings": {}
+  },
+  "username": "",
+  "videos": {
+    "11": {
+      "id": "5f4670c3-d98e-4c00-ad96-3c11c607f7fd",
+      "name": "Điện Biên · 15_7539792480212880647.mp4",
+      "size": 4906689,
+      "duration": 45
+    },
+    "12": {
+      "id": "a8078c22-ab10-4cc4-b246-e62a6dae9548",
+      "name": "Lai Châu · 14_7540233230478216466.mp4",
+      "size": 6030211,
+      "duration": 45
+    },
+    "14": {
+      "id": "1d7f8be4-b442-48ec-b0cb-9e1abdbfa67a",
+      "name": "Sơn La · 16_7539044490011577618.mp4",
+      "size": 4632185,
+      "duration": 45
+    },
+    "15": {
+      "id": "4a39bbf8-da0f-4a11-9d13-94d26d04e2ef",
+      "name": "Lào Cai · 13_7540856767295573255.mp4",
+      "size": 5574275,
+      "duration": 45
+    },
+    "19": {
+      "id": "ab6d8551-f54a-4d80-a306-28d54b2c2eda",
+      "name": "Thái Nguyên · 8_7545811342536527122.mp4",
+      "size": 3890588,
+      "duration": 45
+    },
+    "20": {
+      "id": "f3502a54-c95d-4b52-ab2f-3426ff09755b",
+      "name": "Lạng Sơn · 5_7547987155709201671.mp4",
+      "size": 5473900,
+      "duration": 45
+    },
+    "22": {
+      "id": "5e381b93-8992-4f66-9972-4ba5566a81db",
+      "name": "Quảng Ninh · 6_7546871595629874450.mp4",
+      "size": 6392064,
+      "duration": 45
+    },
+    "24": {
+      "id": "1660b1e8-203e-41ef-8eab-f936b5a0238e",
+      "name": "Bắc Ninh · 12_7541448642717158663.mp4",
+      "size": 6350780,
+      "duration": 45
+    },
+    "25": {
+      "id": "46306091-7c5f-4d87-9490-00ac65bc9e3c",
+      "name": "Phú Thọ · 10_7543562273126731026.mp4",
+      "size": 6061845,
+      "duration": 45
+    },
+    "31": {
+      "id": "3329bcc7-3fcd-43cd-b0b0-2473d97b746b",
+      "name": "Hải Phòng · 22_7534673437076311303.mp4",
+      "size": 4157585,
+      "duration": 40.2
+    },
+    "33": {
+      "id": "bd8d9177-d008-4578-bf07-495a9b0a3703",
+      "name": "Hưng Yên · 20_7536134108833959175.mp4",
+      "size": 8303175,
+      "duration": 45
+    },
+    "37": {
+      "id": "31f1cda8-4ad1-453d-9cb7-9c7e6697368b",
+      "name": "Ninh Bình · 26_7533096489908768008.mp4",
+      "size": 7230511,
+      "duration": 40.2
+    },
+    "38": {
+      "id": "ee66d4e6-ed71-4c0e-827a-debc407dd0dd",
+      "name": "Thanh Hóa · 27_7532294432729713938.mp4",
+      "size": 6407269,
+      "duration": 40.2
+    },
+    "40": {
+      "id": "96a9e34b-ed39-4b30-9f2f-1b437c2d8fa6",
+      "name": "Nghệ An · 28_7531932491930668306.mp4",
+      "size": 7362514,
+      "duration": 40.2
+    },
+    "42": {
+      "id": "6e18d248-dd96-46d2-860d-6d51159b93f1",
+      "name": "Hà Tĩnh · 29_7530998045731769608.mp4",
+      "size": 7424438,
+      "duration": 40.2
+    },
+    "44": {
+      "id": "f41756ae-2d8e-445c-9ef4-e7130758b74b",
+      "name": "Quảng Trị · 32_7530062902330445074.mp4",
+      "size": 7323564,
+      "duration": 40.2
+    },
+    "46": {
+      "id": "dc22064f-4c5d-45f0-baa2-f818d3538f45",
+      "name": "Thừa Thiên Huế · 44_7525063155102534920.mp4",
+      "size": 8205170,
+      "duration": 40.2
+    },
+    "48": {
+      "id": "d01c3dad-982d-465e-b4a2-fec5c584fe2a",
+      "name": "Đà Nẵng · 1_7556555619445083410.mp4",
+      "size": 4009061,
+      "duration": 40.217007
+    },
+    "51": {
+      "id": "f55ec373-200a-4715-b3f3-2f46d4682e43",
+      "name": "Quảng Ngãi · 63_7513579786170584338.mp4",
+      "size": 6760394,
+      "duration": 30.278889
+    },
+    "52": {
+      "id": "0bc6d089-dde5-485c-93d0-6f01abbccd44",
+      "name": "Gia Lai · 60_7514878626932821304.mp4",
+      "size": 3694382,
+      "duration": 30.278889
+    },
+    "56": {
+      "id": "a0383a23-902b-40ae-b398-0247924572a3",
+      "name": "Khánh Hòa · 57_7516180357104815367.mp4",
+      "size": 5810120,
+      "duration": 30.278889
+    },
+    "66": {
+      "id": "a2408260-28c2-4124-a2cc-770e0f4e1396",
+      "name": "Đắk Lắk · 58_7515381231987821831.mp4",
+      "size": 2877380,
+      "duration": 30.278889
+    },
+    "68": {
+      "id": "86af50a2-8242-4351-b40b-faa2fc131410",
+      "name": "Lâm Đồng · 53_7520414719723719944.mp4",
+      "size": 7414687,
+      "duration": 40.2
+    },
+    "75": {
+      "id": "ae66ffe4-9bbb-45ce-a7fe-43bfa8eb8b94",
+      "name": "Đồng Nai · 49_7522276178967760146.mp4",
+      "size": 9396625,
+      "duration": 40.2
+    },
+    "79": {
+      "id": "240127db-38d7-49e9-8a5b-a32323f5d3e9",
+      "name": "TP. Hồ Chí Minh · 47_7523384658445339912.mp4",
+      "size": 9391249,
+      "duration": 40.2
+    },
+    "80": {
+      "id": "9651db2c-9235-44f5-b4ee-117c244355b8",
+      "name": "Tây Ninh · 51_7521731242295905554.mp4",
+      "size": 8782670,
+      "duration": 40.2
+    },
+    "82": {
+      "id": "1bcc0ea4-e74e-4fd7-b788-2d6e89b65eeb",
+      "name": "Đồng Tháp · 40_7526724965761142034.mp4",
+      "size": 6379297,
+      "duration": 40.2
+    },
+    "86": {
+      "id": "1a576630-f174-49f8-9dbb-dfcc55bc1dcf",
+      "name": "Vĩnh Long · 41_7526179961149852935.mp4",
+      "size": 5924107,
+      "duration": 40.2
+    },
+    "91": {
+      "id": "fda65788-38f6-4654-9374-a7aa54571cd3",
+      "name": "An Giang · 39_7527104347356941586.mp4",
+      "size": 7713797,
+      "duration": 40.2
+    },
+    "92": {
+      "id": "a0249ac7-401c-4b42-b90e-ab6794d0a114",
+      "name": "Cần Thơ · 36_7527836398418709768.mp4",
+      "size": 5779050,
+      "duration": 40.2
+    },
+    "96": {
+      "id": "f9f04534-b5d9-4b0b-b9c3-49cfe59e0830",
+      "name": "Cà Mau · 33_7529696186274450706.mp4",
+      "size": 5733682,
+      "duration": 40.17
+    },
+    "old-29": {
+      "id": "1f8f6267-8a09-4b2a-a178-682607748b40",
+      "name": "Hà Nội · 18_7537291986299112722.mp4",
+      "size": 8989519,
+      "duration": 45
+    },
+    "old-11": {
+      "id": "41d6cccb-1800-4878-8c74-8a065a193a3f",
+      "name": "Cao Bằng · 4_7553974146766720263.mp4",
+      "size": 5613389,
+      "duration": 45
+    },
+    "old-22": {
+      "id": "4028c537-a54d-44fb-8d34-eb8cc93db7f7",
+      "name": "Tuyên Quang · 9_7543962853506682120.mp4",
+      "size": 3565488,
+      "duration": 45
+    },
+    "old-23": {
+      "id": "af5454a5-5e61-48eb-b8c7-10f80be2980d",
+      "name": "Hà Giang · 3_7554683804644936978.mp4",
+      "size": 3380523,
+      "duration": 45
+    },
+    "old-24": {
+      "id": "4a39bbf8-da0f-4a11-9d13-94d26d04e2ef",
+      "name": "Lào Cai · 13_7540856767295573255.mp4",
+      "size": 5574275,
+      "duration": 45
+    },
+    "old-27": {
+      "id": "5f4670c3-d98e-4c00-ad96-3c11c607f7fd",
+      "name": "Điện Biên · 15_7539792480212880647.mp4",
+      "size": 4906689,
+      "duration": 45
+    },
+    "old-25": {
+      "id": "a8078c22-ab10-4cc4-b246-e62a6dae9548",
+      "name": "Lai Châu · 14_7540233230478216466.mp4",
+      "size": 6030211,
+      "duration": 45
+    },
+    "old-26": {
+      "id": "1d7f8be4-b442-48ec-b0cb-9e1abdbfa67a",
+      "name": "Sơn La · 16_7539044490011577618.mp4",
+      "size": 4632185,
+      "duration": 45
+    },
+    "old-20": {
+      "id": "ab6d8551-f54a-4d80-a306-28d54b2c2eda",
+      "name": "Thái Nguyên · 8_7545811342536527122.mp4",
+      "size": 3890588,
+      "duration": 45
+    },
+    "old-97": {
+      "id": "3200de24-a471-46f7-b27f-9d69c39a4178",
+      "name": "Bắc Kạn · 7_7546153233840983303.mp4",
+      "size": 3779350,
+      "duration": 45
+    },
+    "old-12": {
+      "id": "f3502a54-c95d-4b52-ab2f-3426ff09755b",
+      "name": "Lạng Sơn · 5_7547987155709201671.mp4",
+      "size": 5473900,
+      "duration": 45
+    },
+    "old-14": {
+      "id": "5e381b93-8992-4f66-9972-4ba5566a81db",
+      "name": "Quảng Ninh · 6_7546871595629874450.mp4",
+      "size": 6392064,
+      "duration": 45
+    },
+    "old-19": {
+      "id": "46306091-7c5f-4d87-9490-00ac65bc9e3c",
+      "name": "Phú Thọ · 10_7543562273126731026.mp4",
+      "size": 6061845,
+      "duration": 45
+    },
+    "old-28": {
+      "id": "f1c84b0b-4188-46c2-891d-327c47dea9bc",
+      "name": "Hòa Bình · 17_7537648636361067794.mp4",
+      "size": 7014921,
+      "duration": 45
+    },
+    "old-88": {
+      "id": "b51b32ce-61f9-4a5e-be06-773b140ed25d",
+      "name": "Vĩnh Phúc · 19_7536531560804420882.mp4",
+      "size": 4448785,
+      "duration": 45
+    },
+    "old-99": {
+      "id": "1660b1e8-203e-41ef-8eab-f936b5a0238e",
+      "name": "Bắc Ninh · 12_7541448642717158663.mp4",
+      "size": 6350780,
+      "duration": 45
+    },
+    "old-98": {
+      "id": "c90d4da0-bb14-4ce9-bbbb-0b8d8b7c3a7b",
+      "name": "Bắc Giang · 11_7542470731490217224.mp4",
+      "size": 6377511,
+      "duration": 45
+    },
+    "old-15": {
+      "id": "3329bcc7-3fcd-43cd-b0b0-2473d97b746b",
+      "name": "Hải Phòng · 22_7534673437076311303.mp4",
+      "size": 4157585,
+      "duration": 40.2
+    },
+    "old-34": {
+      "id": "8738dc67-f24d-43a4-b26b-b29cf7c2fd83",
+      "name": "Hải Dương · 21_7535048047529594130.mp4",
+      "size": 7014529,
+      "duration": 40.2
+    },
+    "old-89": {
+      "id": "bd8d9177-d008-4578-bf07-495a9b0a3703",
+      "name": "Hưng Yên · 20_7536134108833959175.mp4",
+      "size": 8303175,
+      "duration": 45
+    },
+    "old-17": {
+      "id": "eb31ac6d-113a-4cf1-bdad-aafd0b4a26a0",
+      "name": "Thái Bình · 23_7534509121454755079.mp4",
+      "size": 6128984,
+      "duration": 40.2
+    },
+    "old-35": {
+      "id": "31f1cda8-4ad1-453d-9cb7-9c7e6697368b",
+      "name": "Ninh Bình · 26_7533096489908768008.mp4",
+      "size": 7230511,
+      "duration": 40.2
+    },
+    "old-18": {
+      "id": "13ad9bd3-df0f-4bdd-aba3-37b32652e71a",
+      "name": "Nam Định · 24_7533590032259599624.mp4",
+      "size": 4404396,
+      "duration": 40.2
+    },
+    "old-90": {
+      "id": "adcc2575-488b-4390-a284-db95161e6fe3",
+      "name": "Hà Nam · 25_7533217766313118983.mp4",
+      "size": 4467935,
+      "duration": 40.2
+    },
+    "old-36": {
+      "id": "ee66d4e6-ed71-4c0e-827a-debc407dd0dd",
+      "name": "Thanh Hóa · 27_7532294432729713938.mp4",
+      "size": 6407269,
+      "duration": 40.2
+    },
+    "old-37": {
+      "id": "96a9e34b-ed39-4b30-9f2f-1b437c2d8fa6",
+      "name": "Nghệ An · 28_7531932491930668306.mp4",
+      "size": 7362514,
+      "duration": 40.2
+    },
+    "old-38": {
+      "id": "6e18d248-dd96-46d2-860d-6d51159b93f1",
+      "name": "Hà Tĩnh · 29_7530998045731769608.mp4",
+      "size": 7424438,
+      "duration": 40.2
+    },
+    "old-74": {
+      "id": "f41756ae-2d8e-445c-9ef4-e7130758b74b",
+      "name": "Quảng Trị · 32_7530062902330445074.mp4",
+      "size": 7323564,
+      "duration": 40.2
+    },
+    "old-73": {
+      "id": "50709801-12bb-4efa-b1cd-6e449d1d1dd5",
+      "name": "Quảng Bình · 31_7530442155001662738.mp4",
+      "size": 6335389,
+      "duration": 40.2
+    },
+    "old-75": {
+      "id": "dc22064f-4c5d-45f0-baa2-f818d3538f45",
+      "name": "Thừa Thiên Huế · 44_7525063155102534920.mp4",
+      "size": 8205170,
+      "duration": 40.2
+    },
+    "old-43": {
+      "id": "d01c3dad-982d-465e-b4a2-fec5c584fe2a",
+      "name": "Đà Nẵng · 1_7556555619445083410.mp4",
+      "size": 4009061,
+      "duration": 40.217007
+    },
+    "old-92": {
+      "id": "29ea9bc0-eda0-4efb-bbdb-33428a76629d",
+      "name": "Quảng Nam · 64_7513119562250931473.mp4",
+      "size": 4395065,
+      "duration": 30.278889
+    },
+    "old-76": {
+      "id": "f55ec373-200a-4715-b3f3-2f46d4682e43",
+      "name": "Quảng Ngãi · 63_7513579786170584338.mp4",
+      "size": 6760394,
+      "duration": 30.278889
+    },
+    "old-82": {
+      "id": "361d7ac9-b0f5-4e95-a8c8-ab16de2b93ee",
+      "name": "Kon Tum · 62_7513887682167049492.mp4",
+      "size": 4506396,
+      "duration": 30.278889
+    },
+    "old-79": {
+      "id": "a0383a23-902b-40ae-b398-0247924572a3",
+      "name": "Khánh Hòa · 57_7516180357104815367.mp4",
+      "size": 5810120,
+      "duration": 30.278889
+    },
+    "old-85": {
+      "id": "964152ee-9415-49e7-9961-b53c70953ebe",
+      "name": "Ninh Thuận · 55_7519046539160014087.mp4",
+      "size": 4936280,
+      "duration": 40.17
+    },
+    "old-81": {
+      "id": "0bc6d089-dde5-485c-93d0-6f01abbccd44",
+      "name": "Gia Lai · 60_7514878626932821304.mp4",
+      "size": 3694382,
+      "duration": 30.278889
+    },
+    "old-77": {
+      "id": "4652ca8d-d679-4f0e-bc7e-95b7bf497c1b",
+      "name": "Bình Định · 61_7514504038042406152.mp4",
+      "size": 5963970,
+      "duration": 30.278889
+    },
+    "old-47": {
+      "id": "a2408260-28c2-4124-a2cc-770e0f4e1396",
+      "name": "Đắk Lắk · 58_7515381231987821831.mp4",
+      "size": 2877380,
+      "duration": 30.278889
+    },
+    "old-78": {
+      "id": "df67af8f-9c23-475c-8af8-c6dfae29b291",
+      "name": "Phú Yên · 59_7515011368395869458.mp4",
+      "size": 3195142,
+      "duration": 30.278889
+    },
+    "old-49": {
+      "id": "86af50a2-8242-4351-b40b-faa2fc131410",
+      "name": "Lâm Đồng · 53_7520414719723719944.mp4",
+      "size": 7414687,
+      "duration": 40.2
+    },
+    "old-48": {
+      "id": "65a549c9-1e29-4aa9-86a3-6a1afe1e7f38",
+      "name": "Đắk Nông · 56_7516557315307261202.mp4",
+      "size": 4501470,
+      "duration": 30.278889
+    },
+    "old-86": {
+      "id": "bf7b1a22-4d97-43d1-961f-0f2509a55beb",
+      "name": "Bình Thuận · 54_7519861940663897352.mp4",
+      "size": 10301413,
+      "duration": 40.2
+    },
+    "old-70": {
+      "id": "9651db2c-9235-44f5-b4ee-117c244355b8",
+      "name": "Tây Ninh · 51_7521731242295905554.mp4",
+      "size": 8782670,
+      "duration": 40.2
+    },
+    "old-62": {
+      "id": "ffd2bb3d-529d-4839-b55b-cd9dc7e94119",
+      "name": "Long An · 46_7524309511272795399.mp4",
+      "size": 5040599,
+      "duration": 40.2
+    },
+    "old-60": {
+      "id": "ae66ffe4-9bbb-45ce-a7fe-43bfa8eb8b94",
+      "name": "Đồng Nai · 49_7522276178967760146.mp4",
+      "size": 9396625,
+      "duration": 40.2
+    },
+    "old-93": {
+      "id": "4bdcf7b4-121e-4266-9416-44eaf387e932",
+      "name": "Bình Phước · 52_7521168177057828104.mp4",
+      "size": 9076515,
+      "duration": 40.2
+    },
+    "old-41": {
+      "id": "240127db-38d7-49e9-8a5b-a32323f5d3e9",
+      "name": "TP. Hồ Chí Minh · 47_7523384658445339912.mp4",
+      "size": 9391249,
+      "duration": 40.2
+    },
+    "old-61": {
+      "id": "5e9adecc-7de9-49b5-9ead-dd705801c4a7",
+      "name": "Bình Dương · 50_7522092573003959559.mp4",
+      "size": 3812844,
+      "duration": 40.2
+    },
+    "old-72": {
+      "id": "2a758eb3-22b5-49e4-93de-0159140f34fd",
+      "name": "Bà Rịa – Vũng Tàu · 48_7522842901471104264.mp4",
+      "size": 8208937,
+      "duration": 40.2
+    },
+    "old-64": {
+      "id": "1a576630-f174-49f8-9dbb-dfcc55bc1dcf",
+      "name": "Vĩnh Long · 41_7526179961149852935.mp4",
+      "size": 5924107,
+      "duration": 40.2
+    },
+    "old-71": {
+      "id": "08adada3-9b21-4249-a9df-0af4d8b6f0de",
+      "name": "Bến Tre · 43_7525432706038123783.mp4",
+      "size": 4158844,
+      "duration": 40.2
+    },
+    "old-84": {
+      "id": "11120533-7f26-443b-94f9-c5e8ea41326f",
+      "name": "Trà Vinh · 42_7525795033174265106.mp4",
+      "size": 8119393,
+      "duration": 40.17
+    },
+    "old-66": {
+      "id": "1bcc0ea4-e74e-4fd7-b788-2d6e89b65eeb",
+      "name": "Đồng Tháp · 40_7526724965761142034.mp4",
+      "size": 6379297,
+      "duration": 40.2
+    },
+    "old-63": {
+      "id": "de0f2a34-8d8b-4a91-aaed-ef800053e432",
+      "name": "Tiền Giang · 45_7524688036832169223.mp4",
+      "size": 3930752,
+      "duration": 40.2
+    },
+    "old-68": {
+      "id": "eda1fd51-d062-475f-9c15-50021f890cfa",
+      "name": "Kiên Giang · 37_7527467627774594312.mp4",
+      "size": 6886314,
+      "duration": 40.2
+    },
+    "old-67": {
+      "id": "fda65788-38f6-4654-9374-a7aa54571cd3",
+      "name": "An Giang · 39_7527104347356941586.mp4",
+      "size": 7713797,
+      "duration": 40.2
+    },
+    "old-65": {
+      "id": "a0249ac7-401c-4b42-b90e-ab6794d0a114",
+      "name": "Cần Thơ · 36_7527836398418709768.mp4",
+      "size": 5779050,
+      "duration": 40.2
+    },
+    "old-83": {
+      "id": "30ff1df1-26a1-41ca-90f3-05615bca4201",
+      "name": "Sóc Trăng · 35_7528208873929329928.mp4",
+      "size": 4974548,
+      "duration": 40.2
+    },
+    "old-95": {
+      "id": "7b4b36a0-0a47-4eb6-be24-c0193e77cb51",
+      "name": "Hậu Giang · 38_7527171606691564807.mp4",
+      "size": 8816588,
+      "duration": 40.2
+    },
+    "old-69": {
+      "id": "f9f04534-b5d9-4b0b-b9c3-49cfe59e0830",
+      "name": "Cà Mau · 33_7529696186274450706.mp4",
+      "size": 5733682,
+      "duration": 40.17
+    },
+    "old-94": {
+      "id": "5af37f4c-9a80-4c69-93a2-1062da75f91e",
+      "name": "Bạc Liêu · 34_7528578134761835794.mp4",
+      "size": 6987799,
+      "duration": 40.2
+    },
+    "01": {
+      "id": "1f8f6267-8a09-4b2a-a178-682607748b40",
+      "name": "Hà Nội · 18_7537291986299112722.mp4",
+      "size": 8989519,
+      "duration": 45
+    },
+    "04": {
+      "id": "41d6cccb-1800-4878-8c74-8a065a193a3f",
+      "name": "Cao Bằng · 4_7553974146766720263.mp4",
+      "size": 5613389,
+      "duration": 45
+    },
+    "08": {
+      "id": "4028c537-a54d-44fb-8d34-eb8cc93db7f7",
+      "name": "Tuyên Quang · 9_7543962853506682120.mp4",
+      "size": 3565488,
+      "duration": 45
+    }
+  },
+  "videoLibrary": [
+    {
+      "id": "d01c3dad-982d-465e-b4a2-fec5c584fe2a",
+      "name": "Đà Nẵng · 1_7556555619445083410.mp4",
+      "homeId": "old-43",
+      "province": "Đà Nẵng",
+      "provinceIds": [
+        "old-43",
+        "48"
+      ],
+      "size": 4009061,
+      "duration": 40.217007
+    },
+    {
+      "id": "af5454a5-5e61-48eb-b8c7-10f80be2980d",
+      "name": "Hà Giang · 3_7554683804644936978.mp4",
+      "homeId": "old-23",
+      "province": "Hà Giang",
+      "provinceIds": [
+        "old-23",
+        "08"
+      ],
+      "size": 3380523,
+      "duration": 45
+    },
+    {
+      "id": "41d6cccb-1800-4878-8c74-8a065a193a3f",
+      "name": "Cao Bằng · 4_7553974146766720263.mp4",
+      "homeId": "old-11",
+      "province": "Cao Bằng",
+      "provinceIds": [
+        "old-11",
+        "04"
+      ],
+      "size": 5613389,
+      "duration": 45
+    },
+    {
+      "id": "f3502a54-c95d-4b52-ab2f-3426ff09755b",
+      "name": "Lạng Sơn · 5_7547987155709201671.mp4",
+      "homeId": "old-12",
+      "province": "Lạng Sơn",
+      "provinceIds": [
+        "old-12",
+        "20"
+      ],
+      "size": 5473900,
+      "duration": 45
+    },
+    {
+      "id": "5e381b93-8992-4f66-9972-4ba5566a81db",
+      "name": "Quảng Ninh · 6_7546871595629874450.mp4",
+      "homeId": "old-14",
+      "province": "Quảng Ninh",
+      "provinceIds": [
+        "old-14",
+        "22"
+      ],
+      "size": 6392064,
+      "duration": 45
+    },
+    {
+      "id": "3200de24-a471-46f7-b27f-9d69c39a4178",
+      "name": "Bắc Kạn · 7_7546153233840983303.mp4",
+      "homeId": "old-97",
+      "province": "Bắc Kạn",
+      "provinceIds": [
+        "old-97",
+        "19"
+      ],
+      "size": 3779350,
+      "duration": 45
+    },
+    {
+      "id": "ab6d8551-f54a-4d80-a306-28d54b2c2eda",
+      "name": "Thái Nguyên · 8_7545811342536527122.mp4",
+      "homeId": "old-20",
+      "province": "Thái Nguyên",
+      "provinceIds": [
+        "old-20",
+        "19"
+      ],
+      "size": 3890588,
+      "duration": 45
+    },
+    {
+      "id": "4028c537-a54d-44fb-8d34-eb8cc93db7f7",
+      "name": "Tuyên Quang · 9_7543962853506682120.mp4",
+      "homeId": "old-22",
+      "province": "Tuyên Quang",
+      "provinceIds": [
+        "old-22",
+        "08"
+      ],
+      "size": 3565488,
+      "duration": 45
+    },
+    {
+      "id": "46306091-7c5f-4d87-9490-00ac65bc9e3c",
+      "name": "Phú Thọ · 10_7543562273126731026.mp4",
+      "homeId": "old-19",
+      "province": "Phú Thọ",
+      "provinceIds": [
+        "old-19",
+        "25"
+      ],
+      "size": 6061845,
+      "duration": 45
+    },
+    {
+      "id": "c90d4da0-bb14-4ce9-bbbb-0b8d8b7c3a7b",
+      "name": "Bắc Giang · 11_7542470731490217224.mp4",
+      "homeId": "old-98",
+      "province": "Bắc Giang",
+      "provinceIds": [
+        "old-98",
+        "24"
+      ],
+      "size": 6377511,
+      "duration": 45
+    },
+    {
+      "id": "1660b1e8-203e-41ef-8eab-f936b5a0238e",
+      "name": "Bắc Ninh · 12_7541448642717158663.mp4",
+      "homeId": "old-99",
+      "province": "Bắc Ninh",
+      "provinceIds": [
+        "old-99",
+        "24"
+      ],
+      "size": 6350780,
+      "duration": 45
+    },
+    {
+      "id": "4a39bbf8-da0f-4a11-9d13-94d26d04e2ef",
+      "name": "Lào Cai · 13_7540856767295573255.mp4",
+      "homeId": "old-24",
+      "province": "Lào Cai",
+      "provinceIds": [
+        "old-24",
+        "15"
+      ],
+      "size": 5574275,
+      "duration": 45
+    },
+    {
+      "id": "a8078c22-ab10-4cc4-b246-e62a6dae9548",
+      "name": "Lai Châu · 14_7540233230478216466.mp4",
+      "homeId": "old-25",
+      "province": "Lai Châu",
+      "provinceIds": [
+        "old-25",
+        "12"
+      ],
+      "size": 6030211,
+      "duration": 45
+    },
+    {
+      "id": "5f4670c3-d98e-4c00-ad96-3c11c607f7fd",
+      "name": "Điện Biên · 15_7539792480212880647.mp4",
+      "homeId": "old-27",
+      "province": "Điện Biên",
+      "provinceIds": [
+        "old-27",
+        "11"
+      ],
+      "size": 4906689,
+      "duration": 45
+    },
+    {
+      "id": "1d7f8be4-b442-48ec-b0cb-9e1abdbfa67a",
+      "name": "Sơn La · 16_7539044490011577618.mp4",
+      "homeId": "old-26",
+      "province": "Sơn La",
+      "provinceIds": [
+        "old-26",
+        "14"
+      ],
+      "size": 4632185,
+      "duration": 45
+    },
+    {
+      "id": "f1c84b0b-4188-46c2-891d-327c47dea9bc",
+      "name": "Hòa Bình · 17_7537648636361067794.mp4",
+      "homeId": "old-28",
+      "province": "Hòa Bình",
+      "provinceIds": [
+        "old-28",
+        "25"
+      ],
+      "size": 7014921,
+      "duration": 45
+    },
+    {
+      "id": "1f8f6267-8a09-4b2a-a178-682607748b40",
+      "name": "Hà Nội · 18_7537291986299112722.mp4",
+      "homeId": "old-29",
+      "province": "Hà Nội",
+      "provinceIds": [
+        "old-29",
+        "01"
+      ],
+      "size": 8989519,
+      "duration": 45
+    },
+    {
+      "id": "b51b32ce-61f9-4a5e-be06-773b140ed25d",
+      "name": "Vĩnh Phúc · 19_7536531560804420882.mp4",
+      "homeId": "old-88",
+      "province": "Vĩnh Phúc",
+      "provinceIds": [
+        "old-88",
+        "25"
+      ],
+      "size": 4448785,
+      "duration": 45
+    },
+    {
+      "id": "bd8d9177-d008-4578-bf07-495a9b0a3703",
+      "name": "Hưng Yên · 20_7536134108833959175.mp4",
+      "homeId": "old-89",
+      "province": "Hưng Yên",
+      "provinceIds": [
+        "old-89",
+        "33"
+      ],
+      "size": 8303175,
+      "duration": 45
+    },
+    {
+      "id": "8738dc67-f24d-43a4-b26b-b29cf7c2fd83",
+      "name": "Hải Dương · 21_7535048047529594130.mp4",
+      "homeId": "old-34",
+      "province": "Hải Dương",
+      "provinceIds": [
+        "old-34",
+        "31"
+      ],
+      "size": 7014529,
+      "duration": 40.2
+    },
+    {
+      "id": "3329bcc7-3fcd-43cd-b0b0-2473d97b746b",
+      "name": "Hải Phòng · 22_7534673437076311303.mp4",
+      "homeId": "old-15",
+      "province": "Hải Phòng",
+      "provinceIds": [
+        "old-15",
+        "31"
+      ],
+      "size": 4157585,
+      "duration": 40.2
+    },
+    {
+      "id": "eb31ac6d-113a-4cf1-bdad-aafd0b4a26a0",
+      "name": "Thái Bình · 23_7534509121454755079.mp4",
+      "homeId": "old-17",
+      "province": "Thái Bình",
+      "provinceIds": [
+        "old-17",
+        "33"
+      ],
+      "size": 6128984,
+      "duration": 40.2
+    },
+    {
+      "id": "13ad9bd3-df0f-4bdd-aba3-37b32652e71a",
+      "name": "Nam Định · 24_7533590032259599624.mp4",
+      "homeId": "old-18",
+      "province": "Nam Định",
+      "provinceIds": [
+        "old-18",
+        "37"
+      ],
+      "size": 4404396,
+      "duration": 40.2
+    },
+    {
+      "id": "adcc2575-488b-4390-a284-db95161e6fe3",
+      "name": "Hà Nam · 25_7533217766313118983.mp4",
+      "homeId": "old-90",
+      "province": "Hà Nam",
+      "provinceIds": [
+        "old-90",
+        "37"
+      ],
+      "size": 4467935,
+      "duration": 40.2
+    },
+    {
+      "id": "31f1cda8-4ad1-453d-9cb7-9c7e6697368b",
+      "name": "Ninh Bình · 26_7533096489908768008.mp4",
+      "homeId": "old-35",
+      "province": "Ninh Bình",
+      "provinceIds": [
+        "old-35",
+        "37"
+      ],
+      "size": 7230511,
+      "duration": 40.2
+    },
+    {
+      "id": "ee66d4e6-ed71-4c0e-827a-debc407dd0dd",
+      "name": "Thanh Hóa · 27_7532294432729713938.mp4",
+      "homeId": "old-36",
+      "province": "Thanh Hóa",
+      "provinceIds": [
+        "old-36",
+        "38"
+      ],
+      "size": 6407269,
+      "duration": 40.2
+    },
+    {
+      "id": "96a9e34b-ed39-4b30-9f2f-1b437c2d8fa6",
+      "name": "Nghệ An · 28_7531932491930668306.mp4",
+      "homeId": "old-37",
+      "province": "Nghệ An",
+      "provinceIds": [
+        "old-37",
+        "40"
+      ],
+      "size": 7362514,
+      "duration": 40.2
+    },
+    {
+      "id": "6e18d248-dd96-46d2-860d-6d51159b93f1",
+      "name": "Hà Tĩnh · 29_7530998045731769608.mp4",
+      "homeId": "old-38",
+      "province": "Hà Tĩnh",
+      "provinceIds": [
+        "old-38",
+        "42"
+      ],
+      "size": 7424438,
+      "duration": 40.2
+    },
+    {
+      "id": "d60158dc-34d1-4cfb-958d-29b5f089aa22",
+      "name": "Đà Nẵng · 30_7530804981964737799.mp4",
+      "homeId": "old-43",
+      "province": "Đà Nẵng",
+      "provinceIds": [
+        "old-43",
+        "48"
+      ],
+      "size": 5966820,
+      "duration": 40.2
+    },
+    {
+      "id": "50709801-12bb-4efa-b1cd-6e449d1d1dd5",
+      "name": "Quảng Bình · 31_7530442155001662738.mp4",
+      "homeId": "old-73",
+      "province": "Quảng Bình",
+      "provinceIds": [
+        "old-73",
+        "44"
+      ],
+      "size": 6335389,
+      "duration": 40.2
+    },
+    {
+      "id": "f41756ae-2d8e-445c-9ef4-e7130758b74b",
+      "name": "Quảng Trị · 32_7530062902330445074.mp4",
+      "homeId": "old-74",
+      "province": "Quảng Trị",
+      "provinceIds": [
+        "old-74",
+        "44"
+      ],
+      "size": 7323564,
+      "duration": 40.2
+    },
+    {
+      "id": "f9f04534-b5d9-4b0b-b9c3-49cfe59e0830",
+      "name": "Cà Mau · 33_7529696186274450706.mp4",
+      "homeId": "old-69",
+      "province": "Cà Mau",
+      "provinceIds": [
+        "old-69",
+        "96"
+      ],
+      "size": 5733682,
+      "duration": 40.17
+    },
+    {
+      "id": "5af37f4c-9a80-4c69-93a2-1062da75f91e",
+      "name": "Bạc Liêu · 34_7528578134761835794.mp4",
+      "homeId": "old-94",
+      "province": "Bạc Liêu",
+      "provinceIds": [
+        "old-94",
+        "96"
+      ],
+      "size": 6987799,
+      "duration": 40.2
+    },
+    {
+      "id": "30ff1df1-26a1-41ca-90f3-05615bca4201",
+      "name": "Sóc Trăng · 35_7528208873929329928.mp4",
+      "homeId": "old-83",
+      "province": "Sóc Trăng",
+      "provinceIds": [
+        "old-83",
+        "92"
+      ],
+      "size": 4974548,
+      "duration": 40.2
+    },
+    {
+      "id": "a0249ac7-401c-4b42-b90e-ab6794d0a114",
+      "name": "Cần Thơ · 36_7527836398418709768.mp4",
+      "homeId": "old-65",
+      "province": "Cần Thơ",
+      "provinceIds": [
+        "old-65",
+        "92"
+      ],
+      "size": 5779050,
+      "duration": 40.2
+    },
+    {
+      "id": "eda1fd51-d062-475f-9c15-50021f890cfa",
+      "name": "Kiên Giang · 37_7527467627774594312.mp4",
+      "homeId": "old-68",
+      "province": "Kiên Giang",
+      "provinceIds": [
+        "old-68",
+        "91"
+      ],
+      "size": 6886314,
+      "duration": 40.2
+    },
+    {
+      "id": "7b4b36a0-0a47-4eb6-be24-c0193e77cb51",
+      "name": "Hậu Giang · 38_7527171606691564807.mp4",
+      "homeId": "old-95",
+      "province": "Hậu Giang",
+      "provinceIds": [
+        "old-95",
+        "92"
+      ],
+      "size": 8816588,
+      "duration": 40.2
+    },
+    {
+      "id": "fda65788-38f6-4654-9374-a7aa54571cd3",
+      "name": "An Giang · 39_7527104347356941586.mp4",
+      "homeId": "old-67",
+      "province": "An Giang",
+      "provinceIds": [
+        "old-67",
+        "91"
+      ],
+      "size": 7713797,
+      "duration": 40.2
+    },
+    {
+      "id": "1bcc0ea4-e74e-4fd7-b788-2d6e89b65eeb",
+      "name": "Đồng Tháp · 40_7526724965761142034.mp4",
+      "homeId": "old-66",
+      "province": "Đồng Tháp",
+      "provinceIds": [
+        "old-66",
+        "82"
+      ],
+      "size": 6379297,
+      "duration": 40.2
+    },
+    {
+      "id": "1a576630-f174-49f8-9dbb-dfcc55bc1dcf",
+      "name": "Vĩnh Long · 41_7526179961149852935.mp4",
+      "homeId": "old-64",
+      "province": "Vĩnh Long",
+      "provinceIds": [
+        "old-64",
+        "86"
+      ],
+      "size": 5924107,
+      "duration": 40.2
+    },
+    {
+      "id": "11120533-7f26-443b-94f9-c5e8ea41326f",
+      "name": "Trà Vinh · 42_7525795033174265106.mp4",
+      "homeId": "old-84",
+      "province": "Trà Vinh",
+      "provinceIds": [
+        "old-84",
+        "86"
+      ],
+      "size": 8119393,
+      "duration": 40.17
+    },
+    {
+      "id": "08adada3-9b21-4249-a9df-0af4d8b6f0de",
+      "name": "Bến Tre · 43_7525432706038123783.mp4",
+      "homeId": "old-71",
+      "province": "Bến Tre",
+      "provinceIds": [
+        "old-71",
+        "86"
+      ],
+      "size": 4158844,
+      "duration": 40.2
+    },
+    {
+      "id": "dc22064f-4c5d-45f0-baa2-f818d3538f45",
+      "name": "Thừa Thiên Huế · 44_7525063155102534920.mp4",
+      "homeId": "old-75",
+      "province": "Thừa Thiên Huế",
+      "provinceIds": [
+        "old-75",
+        "46"
+      ],
+      "size": 8205170,
+      "duration": 40.2
+    },
+    {
+      "id": "de0f2a34-8d8b-4a91-aaed-ef800053e432",
+      "name": "Tiền Giang · 45_7524688036832169223.mp4",
+      "homeId": "old-63",
+      "province": "Tiền Giang",
+      "provinceIds": [
+        "old-63",
+        "82"
+      ],
+      "size": 3930752,
+      "duration": 40.2
+    },
+    {
+      "id": "ffd2bb3d-529d-4839-b55b-cd9dc7e94119",
+      "name": "Long An · 46_7524309511272795399.mp4",
+      "homeId": "old-62",
+      "province": "Long An",
+      "provinceIds": [
+        "old-62",
+        "80"
+      ],
+      "size": 5040599,
+      "duration": 40.2
+    },
+    {
+      "id": "240127db-38d7-49e9-8a5b-a32323f5d3e9",
+      "name": "TP. Hồ Chí Minh · 47_7523384658445339912.mp4",
+      "homeId": "old-41",
+      "province": "TP. Hồ Chí Minh",
+      "provinceIds": [
+        "old-41",
+        "79"
+      ],
+      "size": 9391249,
+      "duration": 40.2
+    },
+    {
+      "id": "2a758eb3-22b5-49e4-93de-0159140f34fd",
+      "name": "Bà Rịa – Vũng Tàu · 48_7522842901471104264.mp4",
+      "homeId": "old-72",
+      "province": "Bà Rịa – Vũng Tàu",
+      "provinceIds": [
+        "old-72",
+        "79"
+      ],
+      "size": 8208937,
+      "duration": 40.2
+    },
+    {
+      "id": "ae66ffe4-9bbb-45ce-a7fe-43bfa8eb8b94",
+      "name": "Đồng Nai · 49_7522276178967760146.mp4",
+      "homeId": "old-60",
+      "province": "Đồng Nai",
+      "provinceIds": [
+        "old-60",
+        "75"
+      ],
+      "size": 9396625,
+      "duration": 40.2
+    },
+    {
+      "id": "5e9adecc-7de9-49b5-9ead-dd705801c4a7",
+      "name": "Bình Dương · 50_7522092573003959559.mp4",
+      "homeId": "old-61",
+      "province": "Bình Dương",
+      "provinceIds": [
+        "old-61",
+        "79"
+      ],
+      "size": 3812844,
+      "duration": 40.2
+    },
+    {
+      "id": "9651db2c-9235-44f5-b4ee-117c244355b8",
+      "name": "Tây Ninh · 51_7521731242295905554.mp4",
+      "homeId": "old-70",
+      "province": "Tây Ninh",
+      "provinceIds": [
+        "old-70",
+        "80"
+      ],
+      "size": 8782670,
+      "duration": 40.2
+    },
+    {
+      "id": "4bdcf7b4-121e-4266-9416-44eaf387e932",
+      "name": "Bình Phước · 52_7521168177057828104.mp4",
+      "homeId": "old-93",
+      "province": "Bình Phước",
+      "provinceIds": [
+        "old-93",
+        "75"
+      ],
+      "size": 9076515,
+      "duration": 40.2
+    },
+    {
+      "id": "86af50a2-8242-4351-b40b-faa2fc131410",
+      "name": "Lâm Đồng · 53_7520414719723719944.mp4",
+      "homeId": "old-49",
+      "province": "Lâm Đồng",
+      "provinceIds": [
+        "old-49",
+        "68"
+      ],
+      "size": 7414687,
+      "duration": 40.2
+    },
+    {
+      "id": "bf7b1a22-4d97-43d1-961f-0f2509a55beb",
+      "name": "Bình Thuận · 54_7519861940663897352.mp4",
+      "homeId": "old-86",
+      "province": "Bình Thuận",
+      "provinceIds": [
+        "old-86",
+        "68"
+      ],
+      "size": 10301413,
+      "duration": 40.2
+    },
+    {
+      "id": "964152ee-9415-49e7-9961-b53c70953ebe",
+      "name": "Ninh Thuận · 55_7519046539160014087.mp4",
+      "homeId": "old-85",
+      "province": "Ninh Thuận",
+      "provinceIds": [
+        "old-85",
+        "56"
+      ],
+      "size": 4936280,
+      "duration": 40.17
+    },
+    {
+      "id": "65a549c9-1e29-4aa9-86a3-6a1afe1e7f38",
+      "name": "Đắk Nông · 56_7516557315307261202.mp4",
+      "homeId": "old-48",
+      "province": "Đắk Nông",
+      "provinceIds": [
+        "old-48",
+        "68"
+      ],
+      "size": 4501470,
+      "duration": 30.278889
+    },
+    {
+      "id": "a0383a23-902b-40ae-b398-0247924572a3",
+      "name": "Khánh Hòa · 57_7516180357104815367.mp4",
+      "homeId": "old-79",
+      "province": "Khánh Hòa",
+      "provinceIds": [
+        "old-79",
+        "56"
+      ],
+      "size": 5810120,
+      "duration": 30.278889
+    },
+    {
+      "id": "a2408260-28c2-4124-a2cc-770e0f4e1396",
+      "name": "Đắk Lắk · 58_7515381231987821831.mp4",
+      "homeId": "old-47",
+      "province": "Đắk Lắk",
+      "provinceIds": [
+        "old-47",
+        "66"
+      ],
+      "size": 2877380,
+      "duration": 30.278889
+    },
+    {
+      "id": "df67af8f-9c23-475c-8af8-c6dfae29b291",
+      "name": "Phú Yên · 59_7515011368395869458.mp4",
+      "homeId": "old-78",
+      "province": "Phú Yên",
+      "provinceIds": [
+        "old-78",
+        "66"
+      ],
+      "size": 3195142,
+      "duration": 30.278889
+    },
+    {
+      "id": "0bc6d089-dde5-485c-93d0-6f01abbccd44",
+      "name": "Gia Lai · 60_7514878626932821304.mp4",
+      "homeId": "old-81",
+      "province": "Gia Lai",
+      "provinceIds": [
+        "old-81",
+        "52"
+      ],
+      "size": 3694382,
+      "duration": 30.278889
+    },
+    {
+      "id": "4652ca8d-d679-4f0e-bc7e-95b7bf497c1b",
+      "name": "Bình Định · 61_7514504038042406152.mp4",
+      "homeId": "old-77",
+      "province": "Bình Định",
+      "provinceIds": [
+        "old-77",
+        "52"
+      ],
+      "size": 5963970,
+      "duration": 30.278889
+    },
+    {
+      "id": "361d7ac9-b0f5-4e95-a8c8-ab16de2b93ee",
+      "name": "Kon Tum · 62_7513887682167049492.mp4",
+      "homeId": "old-82",
+      "province": "Kon Tum",
+      "provinceIds": [
+        "old-82",
+        "51"
+      ],
+      "size": 4506396,
+      "duration": 30.278889
+    },
+    {
+      "id": "f55ec373-200a-4715-b3f3-2f46d4682e43",
+      "name": "Quảng Ngãi · 63_7513579786170584338.mp4",
+      "homeId": "old-76",
+      "province": "Quảng Ngãi",
+      "provinceIds": [
+        "old-76",
+        "51"
+      ],
+      "size": 6760394,
+      "duration": 30.278889
+    },
+    {
+      "id": "29ea9bc0-eda0-4efb-bbdb-33428a76629d",
+      "name": "Quảng Nam · 64_7513119562250931473.mp4",
+      "homeId": "old-92",
+      "province": "Quảng Nam",
+      "provinceIds": [
+        "old-92",
+        "48"
+      ],
+      "size": 4395065,
+      "duration": 30.278889
+    },
+    {
+      "id": "e730cd26-0efa-494c-85f6-e95bd78195e8",
+      "name": "Đà Nẵng · 65_7512759195662322964.mp4",
+      "homeId": "old-43",
+      "province": "Đà Nẵng",
+      "provinceIds": [
+        "old-43",
+        "48"
+      ],
+      "size": 4602914,
+      "duration": 30.278889
+    },
+    {
+      "id": "c4590e03-ddb8-4a2d-8f72-97a361e47454",
+      "name": "Thừa Thiên Huế · 66_7512412042918120725.mp4",
+      "homeId": "old-75",
+      "province": "Thừa Thiên Huế",
+      "provinceIds": [
+        "old-75",
+        "46"
+      ],
+      "size": 6473261,
+      "duration": 30.278889
+    }
+  ],
+  "music": {
+    "enabled": false,
+    "volume": 0.18,
+    "duckVolume": 0.04,
+    "shuffle": true,
+    "loop": true,
+    "tracks": []
+  },
+  "presentation": {
+    "theme": "tet",
+    "customCss": ""
+  }
+}

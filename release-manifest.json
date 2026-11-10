@@ -1,0 +1,17 @@
+{
+  "version": "2.7.0",
+  "runtime": {
+    "name": "runtime-windows-x64-2.7.0.zip",
+    "size": 987046427,
+    "sha256": "469c5a34cdc9466f0992065c40a9fd51061a53a1e7b826e664c05d1df7b133d0",
+    "label": "runtime, model và giọng đọc",
+    "url": "https://github.com/xuantruongth1/ban-do-que-huong-live/releases/download/v2.7.0/runtime-windows-x64-2.7.0.zip"
+  },
+  "clips": {
+    "name": "province-clips-2.7.0.zip",
+    "size": 390402118,
+    "sha256": "90dcc7378d76b7ff482438fe7f76d1b577a007fc5ed5669c7057a7f73c1ee9b9",
+    "label": "65 clip quê hương",
+    "url": "https://github.com/xuantruongth1/ban-do-que-huong-live/releases/download/v2.7.0/province-clips-2.7.0.zip"
+  }
+}

@@ -1,0 +1,29 @@
+/* A clean broadcast stage: map first, event information in its own column. */
+#stage header,#stage.designed-background header,#stage[data-background-preset='ocean'] header{left:24px;right:24px;top:22px;padding:12px 8px;background:transparent;border:0;box-shadow:none;border-radius:0;text-align:center}
+#stage header h1{font:900 48px/1.2 'Segoe UI',Arial,sans-serif;letter-spacing:-1px;text-shadow:0 2px 10px #0008;margin:0}
+#stage header p{font:600 25px/1.5 'Segoe UI',Arial,sans-serif;color:#e9f1fa;margin:10px 0 0}
+#stage .stats{top:150px;left:28px;right:28px;border:0;border-radius:12px;background:#03172aba;padding:10px 16px;min-height:77px}
+#stage .stats b{font-size:24px}#stage .stats strong{font-size:29px;display:inline;margin-right:8px}#stage .stats .total small{display:none}#stage .stats .total span{display:inline;font-size:18px}#stage .stats small{font-size:15px;margin-top:3px}
+.lighting-progress{position:absolute;left:30px;right:30px;top:241px;height:7px;border-radius:9px;background:#7d9bb329;overflow:hidden}.lighting-progress i{display:block;height:100%;width:var(--lit-ratio,0%);background:linear-gradient(90deg,#ffc34a,#fff29e);box-shadow:0 0 15px #ffd361;transition:width .4s}
+#stage footer{top:270px;left:18px;right:auto;width:692px;bottom:auto}#stage .comment-call{font-size:21px;padding:9px;border-radius:12px;border-color:#8baeca55;background:#06253ac9;box-shadow:none;margin:0}
+#stage #map-wrap{left:4px;top:335px;width:706px;height:calc(1795px - var(--live-safe-bottom,380px));border-radius:0;background:transparent}
+#stage .info-rail{top:270px;right:24px;width:330px;height:calc(1880px - var(--live-safe-bottom,380px))}
+#stage .rail-card,#stage .info-rail .top-card,#stage .info-rail #tour-status{border:1px solid #6687a44d;border-radius:15px;background:#04192aee;box-shadow:0 4px 18px #0003;overflow:hidden}
+#stage .rail-card h2,#stage .info-rail .top-card .mini-label{background:#ffe097;color:#292008;border:0;font-weight:850;font-size:22px;padding:10px 12px}
+#stage #rail-recent{padding-bottom:12px}#stage #rail-recent .rail-person{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;padding:14px 12px 5px;font-size:24px;line-height:1.3}
+#stage #rail-recent .rail-person img{width:78px;height:78px;border:2px solid #ffe097;box-shadow:0 0 18px #ffcf5733}#stage #rail-recent p{font-size:20px;line-height:1.4;color:#e3edf7;margin:8px 12px 0;text-align:center}
+#stage .info-rail #tour-status{padding:13px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px}#stage .info-rail #tour-status strong{font-size:37px;line-height:1.1}#stage .info-rail #tour-status span{font-size:15px}
+#stage .info-rail .top-row{font-size:23px;padding:8px 0;border-bottom:1px solid #9db6cf18;margin:0}#stage .info-rail .top-row:last-child{border-bottom:0}#stage .info-rail .top-row>span:last-child{font-size:22px;font-weight:800;color:#ffe397}
+#stage .rail-leader{font-size:21px;padding:8px 6px}#stage .rail-tier{background:#133146;border-color:#6687a438}#stage .rail-tier>b{color:#ffe080}
+#stage .province-label text{fill:#f0f7fc;stroke:#092131;stroke-width:1.6px}#stage .province-label.lit-label text{fill:#182b36;stroke:#fff0b9;stroke-width:1.6px}#stage .province-label.focus-label text{fill:#172b38;stroke:#fff6d7;stroke-width:1.8px}
+#stage #map-north{top:335px}#stage #map-view-toggle{top:333px;left:420px;width:280px;background:#09293cc9;border-color:#86abc94d;font-size:13px}
+#stage #map-overview{top:780px;left:528px;width:178px;border-color:#86abc94d;background:#052236e8;border-radius:12px}#stage #queue-status{display:none}
+#stage #cartography-note{font-size:10px;color:#a8c5d8}#stage #winner-home-card{background:#061d30f5;border-color:#ffe095;border-radius:20px}
+#stage #cinema{border-radius:20px;border-color:#ffe095;background:#04182bf7;box-shadow:0 0 45px #62a6cd35}
+#stage.portrait-film #cinema{top:215px;left:24px;width:1032px;height:1605px;z-index:40}
+#stage.cinema-mode.portrait-film .info-rail{visibility:hidden}
+
+.control-preview #audio-toggle{display:none}
+#stage .info-rail #tour-status{display:grid;grid-template-columns:1fr auto;align-items:center}#stage .info-rail #tour-status span{grid-column:1/-1;font-size:15px}
+
+h1{color:#ffe092}

@@ -1,0 +1,22 @@
+/* v2: textured relief, retained session lighting and a larger map stage. */
+header{top:40px;left:110px;right:110px;padding:12px 16px 0;background:linear-gradient(150deg,#07385cda,#061b36ee);border:1px solid #49c6e8;border-radius:28px;box-shadow:0 0 22px #159bc65c,inset 0 0 30px #14577e6b}
+.eyebrow{font-size:16px;letter-spacing:5px}h1{font-size:50px;margin:10px 0 12px}h1 span{font-size:68px}.ribbon{font-size:19px;padding:10px 25px;margin-bottom:-1px}.stats{top:300px}
+.map-caption{top:455px;left:56px;font-size:13px;letter-spacing:1.5px;z-index:2}
+#map-wrap{left:-80px;top:475px;width:900px;height:1150px;border-radius:32px}
+#lands{filter:none}#map-depth{fill:#063447;stroke:#1d6571;stroke-width:1;filter:drop-shadow(0 6px 5px #000b)}
+.province{fill:url(#terrain);fill-opacity:.2;stroke:#367d88;stroke-width:.6;filter:none;transition:fill-opacity 1.2s,stroke 1s,stroke-width 1s}
+.province.occupied{fill:url(#terrain);fill-opacity:1;stroke:#cdff9a;stroke-width:1.05;filter:drop-shadow(0 0 2.3px #80f36e)}
+.province.selected{fill:url(#terrain);fill-opacity:1;stroke:#ffe68a;stroke-width:2.7;filter:drop-shadow(0 0 5px #ffcc37)}
+.province.newly-lit{animation:firstlight 2.4s ease-out}.province.burst{animation:reliefpulse 1.5s ease-in-out infinite}
+@keyframes firstlight{0%{fill-opacity:.25;stroke:white;stroke-width:4;filter:drop-shadow(0 0 12px #ffffad)}45%{stroke:#ffffba;stroke-width:2.8}100%{fill-opacity:1}}
+@keyframes reliefpulse{50%{stroke:white;stroke-width:3.5;filter:drop-shadow(0 0 8px #ffd85a)}}
+.pin-name{font-size:8px;stroke-width:2.7}.pin-face{fill:#19495e;stroke:#f9e2a3}.pin-initial{font-size:9px}.pin-count{font-size:8px}
+#tour-status{position:absolute;top:478px;right:35px;width:355px;z-index:4;background:linear-gradient(110deg,#0c2e4ee8,#061d36ed);border:1px solid #46798c;border-radius:15px;padding:14px 18px;box-shadow:0 0 18px #1b6e8e30}#tour-status>div{display:flex;justify-content:space-between;align-items:center;gap:10px}#tour-status span{font-size:12px;letter-spacing:.8px;color:#e7ce9a}#tour-status strong{font-size:26px;font-variant-numeric:tabular-nums;color:#9ee6e8}#tour-status p{color:#89b8c9;font-size:13px;margin:7px 0 0;line-height:1.4}
+.province-card{top:590px;right:35px;width:355px;padding:21px 20px}.province-card h2{font-size:37px;margin:15px 0}.province-card>strong{font-size:21px}.province-card>small{font-size:15px}.province-card .plate{font-size:20px}.province-card p{font-size:17px}.avatar-row{gap:5px}.avatar{width:42px;height:42px;font-size:16px}.avatar.extra{font-size:12px}
+.hoangsa{top:1030px}.truongsa{top:1200px}.island{right:55px;width:160px;padding:11px;border-color:#2b84a0}.island-dots{font-size:18px;letter-spacing:7px}.island b{font-size:13px}.island small{font-size:10px}.sea-label{top:1340px;right:65px;font-size:16px}
+.mc{top:1175px;left:30px;width:310px;padding:17px 18px}.mc p{font-size:19px;line-height:1.5}.mc-title{font-size:16px}.mc-title small{font-size:7px}.mc-title>span{font-size:24px}.wave{font-size:12px}
+.top-card{left:auto;right:35px;top:1390px;width:355px;padding:16px 18px}.top-row{font-size:15px}.top-row>span:last-child{font-size:11px}.top-card>small{font-size:10px}
+#spotlight{top:1030px;right:35px;width:355px}#spotlight h2{font-size:27px}
+#tour-discovery{position:absolute;top:1045px;right:35px;width:355px;z-index:12;padding:22px 20px;border:1.5px solid #f5d58d;border-radius:24px;background:linear-gradient(140deg,#093c58f5,#071d38f5);box-shadow:0 0 28px #ffca5a5b;text-align:center}#tour-discovery h2{font:700 34px Georgia;color:#ffe6a5;margin:15px 0 7px}#tour-discovery .mini-label{font-size:10px}#tour-discovery .tour-intro{font-size:14px;color:#c4e3ef;margin:0 0 18px}#tour-facts{display:grid;grid-template-columns:1fr 1fr;gap:15px 9px}#tour-facts small{display:block;font-size:9px;letter-spacing:.5px;color:#83b2c9;margin-bottom:6px}#tour-facts b{font-size:18px;color:#ffe4a7;line-height:1.35;display:block}#tour-invitation{font-size:14px;line-height:1.6;color:#b9d8e9;margin-bottom:0}
+footer{bottom:28px;left:32px;right:32px}.gift-heading{font-size:20px;padding:8px;width:610px}#gift-strip{margin-top:12px;gap:10px}.gift-tile{padding:12px 6px;border-radius:15px}.gift-tile .symbol{height:45px}.gift-tile img{width:45px;height:45px}.gift-tile b{font-size:16px;margin-top:6px}.gift-tile small{font-size:11px;margin-top:4px}.comment-call{font-size:25px;padding:10px;margin-top:16px}.footer-note{font-size:14px;margin-top:10px}
+.cinema-mode #map-wrap{transform:translate(50px,-5px) scale(.62)}

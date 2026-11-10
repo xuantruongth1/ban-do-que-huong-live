@@ -1,0 +1,13 @@
+{
+  "name": "que-huong-live-runtime",
+  "version": "2.7.0",
+  "private": true,
+  "dependencies": {
+    "bytenode": "2.1.0",
+    "node-edge-tts": "1.2.12",
+    "tiktok-live-connector": "2.5.0"
+  },
+  "scripts": {
+    "start": "node run.cjs"
+  }
+}

@@ -1,0 +1,12 @@
+data/
+content/
+resources/
+runtime/
+node_modules/
+.downloads/
+.setup-*/
+.installed-*.txt
+.env
+*.log
+*.bak
+*.tmp

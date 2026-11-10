@@ -1,0 +1,34 @@
+{
+  "projection": "Lambert conformal conic 2SP",
+  "geographicSource": "EPSG:4326 (VNSDI public query)",
+  "targetGeodetic": "EPSG:4756 VN-2000",
+  "standardParallels": [
+    11,
+    21
+  ],
+  "centralMeridian": 108,
+  "latitudeOrigin": 4,
+  "uniformScaleSvgPerMetre": 0.0005321908235476898,
+  "offset": [
+    19.999999999999943,
+    38.2416019722358
+  ],
+  "projectedFrame": [
+    -676749.8895155641,
+    56348.55747445715,
+    1127114.359026809,
+    2186255.2486482738
+  ],
+  "geographicFrame": [
+    102,
+    4.5,
+    118,
+    23.5
+  ],
+  "modernSource": "https://vnsdi.mae.gov.vn/bandonen/",
+  "modernPublished": "01/10/2026",
+  "historicalSource": "Natural Earth 5.1.2; offshore archipelagos from VNSDI",
+  "transformation": "axis order change (2D) + Inverse of VN-2000 to WGS 84 (2) + unknown",
+  "certified": false,
+  "note": "Nguồn và thông số kỹ thuật đã ghi nhận; chưa có biên bản kiểm tra/nghiệm thu sản phẩm bản đồ."
+}

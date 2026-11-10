@@ -1,0 +1,9 @@
+Bundled third-party components retain their own licenses.
+Python: https://www.python.org/ — license is in runtime/python/LICENSE.txt.
+Node.js: https://nodejs.org/ — source and license: https://github.com/nodejs/node.
+FFmpeg: https://ffmpeg.org/ — this build is from https://www.gyan.dev/ffmpeg/builds/ . Source: https://ffmpeg.org/download.html .
+PyTorch: https://pytorch.org/ — licenses and metadata retained with Python site-packages.
+ONNX Runtime: https://onnxruntime.ai/ — licenses retained with Python site-packages.
+VieNeu and model: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
+MOSS tokenizer: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX
+Third-party package metadata and license files were retained. Voice reference and wedding assets are included at the owner's request.
