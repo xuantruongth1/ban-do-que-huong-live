@@ -27,3 +27,5 @@
 #stage .info-rail #tour-status{display:grid;grid-template-columns:1fr auto;align-items:center}#stage .info-rail #tour-status span{grid-column:1/-1;font-size:15px}
 
 h1{color:#ffe092}
+
+body:not(.overlay-ready) #stage{visibility:hidden}#overlay-loading{position:fixed;inset:0;display:grid;place-content:center;text-align:center;padding:24px;background:#03182c;color:#d4e8f7;font:500 14px/1.6 'Segoe UI',Arial,sans-serif;z-index:1000}#overlay-loading[hidden]{display:none}

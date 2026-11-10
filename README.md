@@ -1,53 +1,90 @@
 # Bản Đồ Quê Hương Việt Nam — Mai Trường LIVE
 
-Game thắp sáng quê hương cho TikTok LIVE. Bản **Windows x64 2.7.1**, có sẵn **65 clip**, ảnh giới thiệu quê, hai bộ bản đồ và giọng MC. Người xem bình luận tên tỉnh để tham gia, không bắt buộc tặng quà.
+Tool tương tác TikTok LIVE, bản **2.8.0**. Mã nguồn ứng dụng được công khai, không làm rối JavaScript, không bytecode backend, không yêu cầu key kích hoạt.
 
-## Tải và chạy
+## Tải EXE — dành cho người dùng
 
-1. Clone repo này hoặc tải ZIP từ **Code → Download ZIP**, giải nén vào một thư mục riêng.
-2. Mở **START.bat**. Lần đầu chương trình tải runtime/model và bộ clip từ Release của chính repo, kiểm tra SHA-256 rồi giải nén. Cần Internet và nên trống ít nhất8GB ổ đĩa. Các lần sau dùng tài nguyên đã tải tại máy.
-3. Trình duyệt mở `http://127.0.0.1:3195/`. Không cần cài Node/Python riêng. Giữ tool đang chạy trong suốt phiên.
-4. Khi tài khoản đã TikTok LIVE: nhập @tài khoản, bấm **Kết nối**, bật **MC & nhạc**, rồi bấm **Chạy tự động** một lần.
+**[Tải bộ cài Windows 64-bit](https://github.com/xuantruongth1/ban-do-que-huong-live/releases/download/v2.8.0/Ban-Do-Que-Huong-Mai-Truong-Setup-2.8.0-x64.exe)** · [Trang phát hành](https://github.com/xuantruongth1/ban-do-que-huong-live/releases/tag/v2.8.0)
 
-Thêm nguồn trình duyệt **1080 × 1920** trong OBS / TikTok LIVE Studio bằng link màn LIVE hiển thị trong điều khiển. Thu một đường âm thanh để tránh vọng. Chạy **Demo3 phút** trước khi lên sóng. [Hướng dẫn đầy đủ](HDSD.md) có cả trong menu của tool.
+Mở EXE, chọn thư mục cài, rồi mở biểu tượng **Bản Đồ Quê Hương – Mai Trường LIVE**. Có sẵn 65 clip, ảnh quê, runtime và model giọng; không cần cài Node/Python riêng. Dự kiến cần khoảng 5 GB dung lượng cài đặt và 8 GB trống trong lần cài đầu.
+
+1. Bắt đầu TikTok LIVE trên tài khoản của bạn.
+2. Nhập @tài khoản trong tool rồi bấm **Kết nối LIVE**. Thao tác này bật quyền âm thanh; kết nối thành công sẽ tự bật MC, nhạc đã thêm và chạy vòng đua.
+3. Thêm link màn LIVE hiển thị trong tool vào OBS / LIVE Studio, nguồn trình duyệt **1080 × 1920**. Kiểm tra phần thu tiếng của nguồn/app để có MC, nhạc và tiếng clip. Chỉ thu một đường để tránh vọng.
+4. Không cần bấm Chạy riêng. Hết vòng tự tắt đèn, giới thiệu/chiếu quê thắng rồi sang vòng mới. **Ngắt** tạm dừng; kết nối lại tiếp tục vòng đang dở.
+
+Nhạc người dùng thêm ở Kho nhạc. Trình duyệt có thể yêu cầu bấm nút âm thanh riêng khi thay đổi nguồn hoặc quyền tự phát bị chặn. [HDSD](HDSD.md) có cả trong menu ứng dụng.
+
+## Clone mã nguồn để chạy
+
+```powershell
+git clone https://github.com/xuantruongth1/ban-do-que-huong-live.git
+cd ban-do-que-huong-live
+```
+
+**Cách dễ nhất trên Windows:** mở `START.bat`. Lần đầu tự tải runtime/model và 65 clip từ GitHub Release, kiểm SHA-256 rồi mở trình duyệt. Các lần sau dùng tài nguyên tại máy. Bộ tải dùng chung các gói tài nguyên 2.7.0 không đổi byte, còn mã nguồn và tính năng dùng bản 2.8.0 mới.
+
+**Nếu đã có Node 22 trở lên:**
+
+```powershell
+npm ci
+npm run setup
+npm start
+```
+
+`npm run setup` chỉ chuẩn bị tài nguyên. `npm start` chạy web tại `http://127.0.0.1:3195/`. Có thể đổi cổng qua `HOMETOWN_PORT`.
 
 ## Chức năng
 
-- Bản đồ63 tỉnh trước sáp nhập hoặc34 tỉnh hiện nay; nhãn tỉnh, Hoàng Sa, Trường Sa, phóng quê và bản toàn cảnh. Màu đậm; chỉnh số màu4–12, các tỉnh kề nhau phân màu khác nhau.
-- Bình luận tên tỉnh có/không dấu: thắp đèn, zoom và +1 điểm. Vòng mặc định5 phút, chỉnh được; tự chốt kết quả, tắt đèn, giới thiệu/chiếu quê thắng, đặt lại điểm và chạy vòng kế tiếp. Đồng hạng lần lượt về từng quê.
-- Sáu hiệu ứng gán quà: hoa hồng giới thiệu quê, tim bay, camera, pháo hoa, đại chiến hai quê và rồng vàng sáng cả bản đồ. Icon quà có STT, tên, xu; vương miện vua tỉnh, TOP điểm và TOP xu.
-- MC theo diễn biến: chào, mở đèn, nhận quà, dẫn đầu/bám đuổi, tỉnh còn tối, chuyện quê, đếm ngược và vinh danh. Giữ Nam Minh tốc độ1.15 mặc định; có tùy chọn giọng clone Tiệc Cưới và model/reference đi kèm.
-- 65 clip đã gán cho62 tỉnh cũ và34 tỉnh hiện nay; thiếu clip riêng Yên Bái. Giữ các clip trùng tỉnh để chọn lại. Clip dọc mở lớn, clip ngang giữ đúng tỷ lệ. Có ảnh/giới thiệu khi chưa có clip.
-- Tám nền, kho nhạc20 bài × tối đa200MiB/bài, giảm nhạc khi MC nói, ngừng nhạc khi chiếu clip.
-- Demo3 phút ngay màn LIVE; HDSD, QR nhóm Zalo và QR ủng hộ. Công cụ kỹ thuật nằm trong Nâng cao.
+- Chọn 63 tỉnh trước sáp nhập hoặc 34 tỉnh hiện nay, có nhãn tỉnh và lớp Hoàng Sa/Trường Sa cùng hệ chiếu. Phóng đất liền kèm toàn cảnh lãnh thổ.
+- Bình luận tên tỉnh có/không dấu để thắp đèn, zoom và +1 điểm. Không dùng biển số. Người tặng cần chọn quê trước.
+- Vòng mặc định 5 phút, chỉnh được. Tự công bố kết quả, tắt đèn, giới thiệu ảnh/MC, chiếu clip rồi đặt lại điểm/đèn và mở vòng tiếp theo. Đồng hạng lần lượt về từng quê.
+- Hoa hồng giới thiệu quê, tim bay, camera quanh quê, pháo hoa, đại chiến hai quê và rồng vàng sáng toàn bản đồ. Chọn lại quà bằng icon, tên, xu và STT. Có vua tỉnh/vương miện, TOP điểm và TOP quà.
+- MC chào hỏi, mời bình luận, đọc người thắp đèn/quà, tiến độ, bám đuổi, đếm ngược, vinh danh và chuyện quê. Chuẩn bị trước câu kế, ưu tiên quà, giữ số liệu đúng diễn biến.
+- Giọng mặc định Nam Minh 1.15; có lựa chọn giọng clone Tiệc Cưới với model/reference gốc đi kèm. Không tự đổi giọng dự phòng khi đã tắt.
+- 65 clip đã gán cho 62 quê cũ và 34 tỉnh hiện nay, giữ clip trùng tỉnh để chọn lại. Chưa có clip riêng Yên Bái; khi thiếu clip vẫn có ảnh và lời giới thiệu. Clip dọc mở lớn, clip ngang đúng tỷ lệ.
+-8 nền; chọn 4–12 màu đậm, tỉnh kề nhau khác màu; kho nhạc 20 bài × tối đa 200MiB/bài, tự hạ nhạc khi MC nói, dừng nhạc khi chiếu clip.
+-Demo 3 phút trên chính màn LIVE, HDSD và QR hỗ trợ/ủng hộ. Công cụ thử kỹ thuật nằm trong Nâng cao.
 
-Sau30s không có thắp đèn có thể tạo đèn tự động có nhãn mô phỏng; không cộng điểm hoặc số người thật. Có thể tắt trong Giao diện.
+Sau 30s không có thắp đèn có thể tạo đèn tự động với tên mô phỏng. Có nhãn tự động, không cộng điểm hoặc số người thật; tắt/chỉnh được trong Giao diện.
 
-## Luật điểm mặc định
-
-| Xu/món | Điểm/món |
+| Giá một món | Điểm mỗi món |
 | --- | ---: |
-| 1–4 | 3 |
-| 5–29 | 30 |
-| 30–99 | 100 |
-| 100–499 | 500 |
-| 500–1499 | 1500 |
-| Từ1500 | 3000 và sáng cả bản đồ |
+| 1–4 xu | 3 |
+| 5–29 xu | 30 |
+| 30–99 xu | 100 |
+| 100–499 xu | 500 |
+| 500–1499 xu | 1500 |
+| Từ 1500 xu | 3000 và sáng toàn bản đồ |
 
-Giá từng món nhân số món, combo chốt không cộng lặp. Người tặng cần bình luận chọn quê trước. Có thể chỉnh trong Nâng cao.
+Điểm tính theo giá từng món nhân số món; combo không cộng lặp. Luật chỉnh được trong Nâng cao.
 
-## Lưu ý vận hành
+## Phát triển và build EXE
 
-Giọng trực tuyến và kết nối TikTok cần mạng; TikTok/dịch vụ kết nối có thể giới hạn lượt hoặc yêu cầu cấu hình riêng. Tool có thử kết nối lại; không cam kết mọi tài khoản/khu vực đều kết nối được. Giọng clone tại máy cần thời gian nạp model lần đầu.
+```powershell
+npm ci
+npm run setup
+npm test
+npm start
+npm run dist:win
+```
 
-Mỗi máy tự lưu tài khoản, lượt đua, cài đặt, clip và nhạc thêm trong `data/`. Repo không kèm key, tài khoản đã lưu hay lịch sử LIVE của chủ tool. Không commit thư mục đó. Google dự phòng tắt mặc định để giữ đúng giọng nam; bật được trong Nâng cao.
+Mã backend trong `server.mjs`, engine và MC/bản đồ ở `public/`, kết nối và service ở `core/`/`vendor/`, desktop ở `desktop.cjs`. Mã worker giọng gốc có trong `python/wedding_voice.py`; runtime đã kèm worker đã biên dịch để giữ đúng bộ giọng hiện tại. Không có lớp bảo vệ riêng cho JavaScript/backend. Electron dùng sandbox/context isolation cho webview như cấu hình vận hành thông thường.
 
-Đây là bản chạy đã bảo vệ theo quy tắc phát hành của chủ tool: backend bytecode, JavaScript trình duyệt minify/làm rối. Có thể clone và sử dụng; không phải cam kết công khai toàn bộ mã nguồn hay bảo vệ tuyệt đối khỏi dịch ngược. Chỉ chạy với runtime Windows x64 đi kèm. SHA-256 kiểm tra tệp/download, không thay chữ ký nhà phát hành.
+Các bài kiểm thử browser dùng Playwright: `npx playwright install chromium` hoặc dùng Chrome/Edge đã cài ở các test chọn channel. Test connector mock chạy trong tiến trình riêng, không gửi tương tác giả lên TikTok.
 
-Nguồn ảnh/giấy phép có tại `/credits.html` trong tool; dữ liệu/phép chiếu tại `public/map-metadata.json`. Sản phẩm không có biên bản chứng nhận bản đồ. Thành phần bên thứ ba giữ giấy phép riêng: [THIRD-PARTY.txt](THIRD-PARTY.txt).
+Nếu cần tạo lại đường biên, dữ liệu và script GIS ở `tools/`; cài Python và `tools/requirements-map.txt`, chạy `npm run build`, sau đó `npm run assets:labels` khi web local đang mở. File nhãn tính sẵn có hash hình học; dữ liệu đổi thì tự tính lại thay vì dùng nhãn cũ.
 
-## Hỗ trợ và cà phê ☕
+## Dữ liệu và giới hạn
 
-Nhóm Zalo: [Tool game TikTok](https://zalo.me/g/rvny4herfbvyzbwxdiup). Liên hệ [Mai Trường](https://zalo.me/0359090502).
+EXE lưu dữ liệu tại thư mục ứng dụng của Windows, mở qua menu **Thư mục dữ liệu**. Bản clone dùng `data/`. Tài khoản, điểm, nhạc/clip bạn thêm và lịch sử được lưu ở máy riêng; không có key, tài khoản hay lịch sử LIVE của chủ tool trong repo. Các thư mục dữ liệu/runtime được Git bỏ qua.
 
-Anh em dùng thấy ổn, có thể ủng hộ một cốc cà phê trong mục **Hỗ trợ & ủng hộ** để góp tiền token và duy trì việc phát triển tool. Hoàn toàn tự nguyện, không phải điều kiện để chơi.
+TikTok hoặc dịch vụ kết nối có thể giới hạn lượt, thay đổi giao thức hoặc yêu cầu cấu hình riêng. Chờ cơ chế thử lại, không bấm dồn. Tool dùng giao thức cộng đồng, không phải sản phẩm chính thức của TikTok. Giọng trực tuyến cần mạng; clone tại máy cần thời gian nạp model ban đầu.
+
+Nguồn ảnh/giấy phép ở `/credits.html`, dữ liệu/phép chiếu ở `public/map-metadata.json`. Chưa có biên bản chứng nhận sản phẩm bản đồ. Thành phần bên thứ ba giữ giấy phép riêng: [THIRD-PARTY.txt](THIRD-PARTY.txt), `licenses/` và metadata trong runtime. Bộ cài chưa có chữ ký Authenticode; SHA-256 chỉ đối chiếu tệp tải, không thay chữ ký xác thực nhà phát hành.
+
+## Hỗ trợ & cà phê ☕
+
+[Nhóm Tool game TikTok](https://zalo.me/g/rvny 4herfbvyzbwxdiup) · [Zalo Mai Trường](https://zalo.me/0359090502)
+
+Anh em dùng thấy ổn có thể donate một cốc cà phê ở mục **Hỗ trợ & ủng hộ**, góp tiền token và duy trì phát triển tool. Hoàn toàn tự nguyện. Gặp lỗi gửi ảnh và mô tả thao tác vào nhóm giúp mình nhé!

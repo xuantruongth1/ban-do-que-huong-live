@@ -1,0 +1,4 @@
+import {WeddingVoice} from '../core/wedding-voice.mjs';
+import {mkdir,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../test-output/wedding-voice/',import.meta.url));await mkdir(root,{recursive:true});const voice=new WeddingVoice(root);const started=performance.now();try{const audio=await voice.synthesize('MC Mai Trường xin chào đồng hương. Thanh Hóa đã bừng sáng!');await writeFile(root+'sample-wedding.wav',audio);const firstSeconds=(performance.now()-started)/1000;const cacheStart=performance.now();await voice.synthesize('MC Mai Trường xin chào đồng hương. Thanh Hóa đã bừng sáng!');const result={...voice.status(),bytes:audio.length,firstSeconds,cacheSeconds:(performance.now()-cacheStart)/1000};await writeFile(root+'report.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));}finally{voice.close();}

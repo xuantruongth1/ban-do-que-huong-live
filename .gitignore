@@ -1,8 +1,12 @@
 data/
-content/
 resources/
+content/
 runtime/
 node_modules/
+.dist/
+dist/
+test-output/
+tools/runtime-libs/
 .downloads/
 .setup-*/
 .installed-*.txt

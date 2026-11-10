@@ -1,7 +1,0 @@
-const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
-const root=__dirname;if(process.platform!=='win32'||process.arch!=='x64'||process.version!=='v24.15.0')throw Error('Hãy mở START.bat để dùng đúng runtime Windows x64 đi kèm.');
-const manifest=JSON.parse(fs.readFileSync(path.join(root,'INTEGRITY.json'),'utf8'));
-for(const item of manifest.files){const file=path.resolve(root,item.path);if(!file.startsWith(root+path.sep))throw Error('Đường dẫn kiểm tra không hợp lệ');if(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')!==item.sha256)throw Error('Tệp đã khác bản phát hành: '+item.path);}
-const data=path.resolve(process.env.HOMETOWN_DATA||path.join(root,'data'));fs.mkdirSync(path.join(data,'videos'),{recursive:true});if(!fs.existsSync(path.join(data,'race-settings.json')))fs.copyFileSync(path.join(root,'seed/race-settings.json'),path.join(data,'race-settings.json'));
-const seed=JSON.parse(fs.readFileSync(path.join(root,'seed/race-settings.json')));for(const clip of seed.videoLibrary){const dest=path.join(data,'videos',clip.id),from=path.join(root,'content/videos',clip.id);if(!fs.existsSync(dest)){if(!fs.existsSync(from)||fs.statSync(from).size!==clip.size)throw Error('Chưa tải đủ clip. Chạy lại START.bat.');try{fs.linkSync(from,dest);}catch{fs.copyFileSync(from,dest);}}}
-process.env.HOMETOWN_APP_ROOT=root;process.env.HOMETOWN_DATA=data;require('bytenode');require('./app/server.jsc');

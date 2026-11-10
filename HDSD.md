@@ -1,6 +1,6 @@
 # Hướng dẫn Bản Đồ Quê Hương — Mai Trường LIVE
 
-Mở `START.bat`. Lần đầu chờ tải runtime/model và bộ clip từ GitHub Release; các lần sau dùng tài nguyên đã tải tại máy. Điều khiển: http://127.0.0.1:3195/. Hướng dẫn có ngay trong menu **Hướng dẫn sử dụng** hoặc tại http://127.0.0.1:3195/huong-dan.html.
+Mở `start-local.ps1` hoặc lối mở tool đang dùng. Điều khiển: http://127.0.0.1:3195/. Hướng dẫn có ngay trong menu **Hướng dẫn sử dụng** hoặc tại http://127.0.0.1:3195/huong-dan.html.
 
 ## Chuẩn bị một lần
 
@@ -12,11 +12,11 @@ Mở `START.bat`. Lần đầu chờ tải runtime/model và bộ clip từ GitH
 ## Bắt đầu LIVE
 
 1. Bắt đầu phát TikTok LIVE bằng tài khoản của bạn.
-2. Tại **Điều khiển**, nhập @tài khoản hoặc link LIVE và bấm **Kết nối**. Tool tự chọn nguồn LIVE thật; đợi trạng thái xác nhận đã kết nối. Không bấm kết nối sang tài khoản khác khi vòng đang chạy nếu không muốn tạm dừng nguồn cũ.
+2. Tại **Điều khiển**, nhập @tài khoản hoặc link LIVE và bấm **Kết nối**. Tool chỉ dùng kết nối LIVE thật; không có lựa chọn Giả lập. Đợi trạng thái xác nhận đã kết nối. Không bấm kết nối sang tài khoản khác khi vòng đang chạy nếu không muốn tạm dừng nguồn cũ.
 3. Sao chép link màn LIVE ở cột xem trước. Thêm nguồn trình duyệt **1080 × 1920** trong OBS / LIVE Studio. Nếu dùng nguồn cửa sổ, bấm **Mở màn LIVE** rồi chọn đúng cửa sổ đó.
-4. Bấm **Bật MC & nhạc** dưới preview. Kiểm tra phần mềm phát sóng thu được tiếng của trình duyệt/tool. Chỉ giữ một đường thu để tránh vọng. Màn LIVE mở riêng có thể nhận quyền tiếng nếu bạn bấm nút âm thanh trên màn đó; chỉ một màn được phát tiếng cùng lúc.
+4. Nút **Kết nối LIVE** tự bật MC và nhạc dưới preview. Có thể bấm **Bật MC & nhạc** riêng nếu trình duyệt yêu cầu. Kiểm tra phần mềm phát sóng thu được tiếng của trình duyệt/tool. Chỉ giữ một đường thu để tránh vọng. Màn LIVE mở riêng có thể nhận quyền tiếng nếu bạn bấm nút âm thanh trên màn đó; chỉ một màn được phát tiếng cùng lúc.
 5. Đặt **Thời lượng mỗi vòng**, bấm **Lưu thời lượng**. Mặc định5 phút. Thời lượng mới áp dụng từ vòng tiếp theo nếu đang đua.
-6. Bấm **Chạy tự động** một lần. Tool tự chạy các vòng nối tiếp. Giữ tool/server và màn giữ quyền âm thanh mở trong suốt phiên.
+6. Không cần bấm Chạy riêng. Bấm **Kết nối LIVE** sẽ tự bật quyền âm thanh từ thao tác bấm; khi TikTok nối thành công, tool bật MC, nhạc đã thêm và bắt đầu vòng đua. Các vòng tiếp theo tự nối tiếp. Giữ tool/server và màn giữ quyền âm thanh mở trong suốt phiên.
 
 ## Chu trình tự động
 

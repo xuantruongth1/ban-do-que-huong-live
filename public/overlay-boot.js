@@ -1,0 +1,5 @@
+// This small classic script runs before the module dependency graph is loaded.
+(()=>{const stage=document.getElementById('stage'),status=document.createElement('div');status.id='overlay-loading';status.setAttribute('role','status');status.textContent='Đang tải màn LIVE…';document.body.append(status);
+function fit(){const w=document.documentElement.clientWidth,h=innerHeight,n=Math.min(w/1080,h/1920);stage.style.transform='scale('+n+')';stage.style.left=(w-1080*n)/2+'px';stage.style.top=(h-1920*n)/2+'px';}fit();addEventListener('resize',fit);const observer=new ResizeObserver(fit);observer.observe(document.documentElement);
+window.hometownBoot={ready(){document.body.classList.add('overlay-ready');status.hidden=true;},error(message){if(!document.body.classList.contains('overlay-ready'))status.textContent=message;}};
+const delayed=setTimeout(()=>{if(!document.body.classList.contains('overlay-ready'))status.textContent='Màn LIVE đang tải chậm. Đang chờ dữ liệu từ tool…';},10000);addEventListener('pagehide',()=>{clearTimeout(delayed);observer.disconnect();},{once:true});})();

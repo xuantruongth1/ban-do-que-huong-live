@@ -1,13 +1,107 @@
 {
-  "name": "que-huong-live-runtime",
-  "version": "2.7.1",
+  "name": "mai-truong-ban-do-que-huong",
+  "productName": "Ban Do Que Huong Mai Truong",
+  "version": "2.8.0",
   "private": true,
+  "type": "module",
+  "main": "desktop.cjs",
+  "description": "Bản Đồ Quê Hương Việt Nam – TikTok LIVE",
+  "author": "Mai Trường",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node run.mjs",
+    "setup": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File Setup.ps1 -InstallOnly",
+    "desktop": "electron .",
+    "build": "node tools/build.mjs",
+    "assets:labels": "node tools/build-label-layouts.mjs",
+    "test": "node --test test/race-*.test.mjs",
+    "test:auto": "node test/connect-auto-browser.mjs",
+    "test:reload": "node test/reload-active-browser.mjs",
+    "dist:win": "electron-builder --win nsis --x64 --publish never"
+  },
   "dependencies": {
-    "bytenode": "2.1.0",
     "node-edge-tts": "1.2.12",
     "tiktok-live-connector": "2.5.0"
   },
-  "scripts": {
-    "start": "node run.cjs"
+  "devDependencies": {
+    "electron": "45.2.1",
+    "electron-builder": "26.18.0",
+    "playwright": "1.64.1"
+  },
+  "build": {
+    "appId": "vn.maitruong.quehuonglive",
+    "productName": "Ban Do Que Huong Mai Truong",
+    "asar": false,
+    "npmRebuild": false,
+    "compression": "normal",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "server.mjs",
+      "run.mjs",
+      "initialize.mjs",
+      "desktop.cjs",
+      "core/**/*",
+      "public/**/*",
+      "vendor/**/*",
+      "seed/**/*",
+      "licenses/**/*",
+      "package.json",
+      "LICENSE.txt",
+      "THIRD-PARTY.txt",
+      "HDSD.md",
+      "assets/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "runtime/node.exe",
+        "to": "runtime/node.exe"
+      },
+      {
+        "from": "resources",
+        "to": "voice",
+        "filter": [
+          "**/*",
+          "!**/__pycache__/**",
+          "!**/*.pyc",
+          "!**/*.pyo",
+          "!**/*.tmp",
+          "!**/*.log",
+          "!**/.agent_harnesses.json",
+          "!runtime/python/include/**",
+          "!runtime/python/libs/**",
+          "!runtime/python/Lib/site-packages/torch/include/**",
+          "!runtime/python/Lib/site-packages/numpy/_core/include/**"
+        ]
+      },
+      {
+        "from": "content",
+        "to": "content"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "public/assets/app-icon.ico",
+      "executableName": "BanDoQueHuong",
+      "signAndEditExecutable": true,
+      "signExecutable": false,
+      "artifactName": "Ban-Do-Que-Huong-Mai-Truong-Setup-${version}-x64.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "Bản Đồ Quê Hương – Mai Trường LIVE",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true
+    }
   }
 }

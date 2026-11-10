@@ -1,4 +1,4 @@
-﻿param([switch]$NoBrowser)
+﻿param([switch]$NoBrowser,[switch]$InstallOnly)
 $ErrorActionPreference='Stop'
 $ProgressPreference='SilentlyContinue'
 [Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false)
@@ -40,11 +40,12 @@ function Install-Payload($Asset,[string[]]$Folders){
 }
 Install-Payload $release.runtime @('runtime','resources','node_modules')
 Install-Payload $release.clips @('content')
+if($InstallOnly){Write-Host 'Tài nguyên đã sẵn sàng.';return}
 $dataPath=Join-Path $appRoot 'data';New-Item -ItemType Directory -Path $dataPath -Force | Out-Null
 $portNumber=3195;if($env:HOMETOWN_PORT){$portNumber=[int]$env:HOMETOWN_PORT};$baseUrl='http://127.0.0.1:'+$portNumber
 $healthy=$false;try{$state=Invoke-RestMethod ($baseUrl+'/api/state') -TimeoutSec 2;$healthy=$state.schema -eq 2}catch{}
 if(-not $healthy){
- $nodeExe=Join-Path $appRoot 'runtime/node.exe';$entry=Join-Path $appRoot 'run.cjs'
+ $nodeExe=Join-Path $appRoot 'runtime/node.exe';$entry=Join-Path $appRoot 'run.mjs'
  Start-Process -FilePath $nodeExe -ArgumentList ('"'+$entry+'"') -WorkingDirectory $appRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $dataPath 'server.log') -RedirectStandardError (Join-Path $dataPath 'server-error.log') | Out-Null
  for($attempt=0;$attempt -lt 60;$attempt++){Start-Sleep -Milliseconds 250;try{$state=Invoke-RestMethod ($baseUrl+'/api/state') -TimeoutSec 2;if($state.schema -eq 2){$healthy=$true;break}}catch{}}
 }
